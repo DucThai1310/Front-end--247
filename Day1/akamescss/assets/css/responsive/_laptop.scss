@@ -1,0 +1,79 @@
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  .col {
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+  }
+  
+  .col-d-3 {
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+  }
+  .display-none-1 {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+
+  .display-none-1 {
+    display: none;
+  }
+
+  .col {
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+  }
+  .about-us-img img {
+    width: 353px;
+}
+  .container {
+    width: 85% !important;
+    max-width: 100rem;
+  }
+
+  .container-nav {
+    width: 85% !important;
+    max-width: 100rem;
+  }
+
+  .akame-portfolio-area {
+    margin-left: 50px !important;
+  }
+
+  .row-lt-img {
+    margin-right: -100px !important;
+    margin-left: -100px !important;
+  }
+
+  .row-blog-1 {
+    margin-right: -90px;
+    margin-left: -46px;
+  }
+
+  .row-lt-1 {
+    margin-right: -51px !important;
+    margin-left: -40px !important;
+  }
+
+
+  .about-heading span {
+    font-size: 90px;
+  }
+
+  .about-heading h2 {
+    font-size: 40px;
+  }
+
+  .about-us-content h3 {
+    margin-top: 50px;
+  }
+
+  .view-all-btn {
+    margin-left: 40px;
+  }
+
+  .post-area .post-content .post-title {
+    font-size: 21px;
+  }
+}
