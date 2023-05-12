@@ -1,0 +1,408 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-size: 18px;
+}
+
+label {
+  font-size: 18px;
+}
+
+input {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  width: 1450px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 100rem;
+}
+
+.infor__top .form__item__answer label, .infor__top .form__item__question label, .infor__top .form__item__type-password label, .infor__top .form__item__password label, .infor__top .form__item__user label, .infor__top .form__item__monthly label, .infor__top .form__item__enroll label, .infor__top .form__item__email label, .infor__top .form__item__zip label, .infor__top .form__item_mail label, .infor__top .form__item__contact label {
+  width: 140px;
+  padding: 10px;
+  text-align: right;
+  line-height: 20px;
+}
+
+.mgr-left-30 {
+  margin-left: 30px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.infor__top .phone select, .infor__top .form__item_mail select {
+  height: 37.6px;
+  width: 140px;
+  border-radius: 5px;
+  border: 1px solid #CBCBCB;
+  padding: 10px;
+}
+
+.infor__top .form__item__answer input, .infor__top .form__item__question select, .infor__top .form__item__type-password input, .infor__top .form__item__password input, .infor__top .form__item__user input, .infor__top .form__item__monthly select, .infor__top .form__item__enroll input, .infor__top .phone input, .infor__top .form__item__email .checkbox-1 input, .infor__top .form__item__email input, .infor__top .form__item__zip input, .infor__top .form__item_mail input, .infor__top .form__item__contact input {
+  font-size: 16px;
+  width: 120px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #CBCBCB;
+}
+
+.infor__top .form__item_mail input {
+  margin-bottom: 16px;
+}
+
+.infor__top {
+  display: flex;
+  padding: 30px;
+  width: 100%;
+  border-right: 1px solid #a78b8b;
+  border-left: 1px solid #a78b8b;
+}
+
+.infor__top .form__infor {
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #CBCBCB;
+}
+.infor__top .form__item__contact {
+  width: 100%;
+  display: flex;
+}
+.infor__top .form__item_mail {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+}
+.infor__top .form__item_mail input {
+  width: 395px;
+}
+.infor__top .form__item_mail select {
+  margin-left: 45px;
+}
+.infor__top .form__item__zip {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+.infor__top .form__item__zip input {
+  width: 70px;
+  margin-left: 40px;
+}
+.infor__top .form__item__email {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+.infor__top .form__item__email input {
+  margin-left: 30px;
+  width: 395px;
+  height: 16px;
+}
+.infor__top .form__item__email .checkbox-1 {
+  position: relative;
+}
+.infor__top .form__item__email .checkbox-1 input {
+  margin-top: 40px;
+  margin-left: 185px;
+  width: 30px;
+  height: 20px;
+}
+.infor__top .form__item__email .checkbox-1 p {
+  top: 40px;
+  left: 222px;
+  position: absolute;
+  width: 700px;
+}
+.infor__top .form__item__email .checkbox-1 a {
+  position: absolute;
+  left: 190px;
+  bottom: -45px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.infor__top .phone {
+  display: flex;
+}
+.infor__top .phone input {
+  width: 30px;
+  font-size: 16px;
+}
+.infor__top .phone select {
+  margin-left: 60px;
+  font-weight: bold;
+}
+.infor__top .form__item__enroll {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.infor__top .form__item__enroll input {
+  height: 20px;
+  width: 40px;
+  display: flex;
+  align-self: center;
+  margin-left: 18px;
+}
+.infor__top .form__item__monthly {
+  padding-bottom: 40px;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #CBCBCB;
+}
+.infor__top .form__item__monthly select {
+  margin-left: 30px;
+  width: 300px;
+}
+.infor__top .form__item__user {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.infor__top .form__item__user input {
+  margin-left: 30px;
+  width: 230px;
+}
+.infor__top .form__item__user p {
+  margin-left: 50px;
+  font-size: 18px;
+}
+.infor__top .form__item__password {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+.infor__top .form__item__password label {
+  margin-left: 36px;
+}
+.infor__top .form__item__password input {
+  margin-left: 30px;
+  width: 300px;
+}
+.infor__top .form__item__password p {
+  margin-left: 49px;
+  font-size: 18px;
+}
+.infor__top .form__item__type-password {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+}
+.infor__top .form__item__type-password input {
+  width: 230px;
+  margin-left: 30px;
+}
+.infor__top .form__item__question {
+  display: flex;
+  margin-top: 18px;
+  width: 100%;
+}
+.infor__top .form__item__question select {
+  width: 346px;
+  margin-left: 30px;
+}
+.infor__top .form__item__answer {
+  display: flex;
+  margin-top: 18px;
+  width: 100%;
+  align-items: center;
+}
+.infor__top .form__item__answer input {
+  margin-left: 30px;
+  width: 326px;
+}
+.infor__top .form__btn {
+  display: flex;
+  width: 100%;
+  margin-top: 18px;
+}
+.infor__top .form__btn .btn {
+  width: 600px;
+  height: 50px;
+  border: 1px solid #178690;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 10px;
+  color: white;
+  background-color: #178690;
+  font-weight: bold;
+  cursor: pointer;
+}
+.infor__top .form__btn .btn:hover {
+  background-color: #CBCBCB;
+  border: 1px solid #CBCBCB;
+}
+.infor__top .form__btn .reset {
+  margin-left: 20px;
+  width: 200px;
+  height: 50px;
+  color: #178690;
+  font-weight: bold;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.infor__top .form__btn .reset:hover {
+  background-color: #178690;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

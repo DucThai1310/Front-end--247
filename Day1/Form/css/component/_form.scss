@@ -1,0 +1,298 @@
+.infor__top {
+    @extend %form;
+
+    .form__infor {
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid $boder-input;
+    }
+
+    .form__item__contact {
+        width: 100%;
+        display: flex;
+
+        label {
+            @extend %label;
+        }
+
+        input {
+            @extend %input;
+        }
+    }
+
+    .form__item_mail {
+        width: 100%;
+        display: flex;
+        margin-top: 15px;
+
+        label {
+            @extend %label;
+        }
+
+        input {
+            @extend %input;
+            width: 395px;
+            @extend %mgr-bottom;
+        }
+
+        select {
+            @extend %select;
+            margin-left: 45px;
+        }
+    }
+
+    .form__item__zip {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+
+        label {
+            @extend %label;
+        }
+
+        input {
+            @extend %input;
+            width: 70px;
+            margin-left: 40px;
+        }
+    }
+
+    .form__item__email {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+        flex-direction: column;
+
+        label {
+            @extend %label;
+        }
+
+        input {
+            margin-left: 30px;
+            @extend %input;
+            width: 395px;
+            height: 16px;
+        }
+
+        .checkbox-1 {
+            position: relative;
+
+            input {
+                margin-top: 40px;
+                margin-left: 185px;
+                width: 30px;
+                height: 20px;
+                @extend %input;
+            }
+
+            p {
+                top: 40px;
+                left: 222px;
+                position: absolute;
+                width: 700px;
+            }
+
+            a {
+                position: absolute;
+                left: 190px;
+                bottom: -45px;
+                cursor: pointer;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .phone {
+        display: flex;
+
+        input {
+            @extend %input;
+            width: 30px;
+            font-size: 16px;
+        }
+
+        select {
+            @extend %select;
+            margin-left: 60px;
+            font-weight: bold;
+
+        }
+    }
+
+    .form__item__enroll {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        label {
+            @extend %label;
+        }
+
+        input {
+            @extend %input;
+            height: 20px;
+            width: 40px;
+            display: flex;
+            align-self: center;
+            margin-left: 18px;
+        }
+    }
+
+    .form__item__monthly {
+        padding-bottom: 40px;
+        width: 100%;
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        border-bottom: 1px solid $boder-input;
+
+        label {
+            @extend %label;
+
+        }
+
+        select {
+            margin-left: 30px;
+            @extend %input;
+            width: 300px;
+        }
+    }
+
+    .form__item__user {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        label {
+            @extend %label;
+        }
+
+        input {
+            @extend %input;
+            margin-left: 30px;
+            width: 230px;
+        }
+
+        p {
+            margin-left: 50px;
+            font-size: 18px;
+        }
+    }
+
+    .form__item__password {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+
+        label {
+            @extend %label;
+            margin-left: 36px
+        }
+
+        input {
+            @extend %input;
+            margin-left: 30px;
+            width: 300px;
+        }
+
+        p {
+            margin-left: 49px;
+            font-size: 18px;
+        }
+    }
+
+    .form__item__type-password {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+
+        label {
+            @extend %label;
+        }
+
+        input {
+            @extend %input;
+            width: 230px;
+            margin-left: 30px;
+        }
+
+    }
+
+    .form__item__question {
+        display: flex;
+        margin-top: 18px;
+        width: 100%;
+
+        label {
+            @extend %label;
+        }
+
+        select {
+            @extend %input;
+            width: 346px;
+            margin-left: 30px;
+        }
+
+    }
+
+    .form__item__answer {
+        display: flex;
+        margin-top: 18px;
+        width: 100%;
+        align-items: center;
+
+        label {
+            @extend %label;
+        }
+
+        input {
+            @extend %input;
+            margin-left: 30px;
+            width: 326px;
+        }
+    }
+
+    .form__btn {
+        display: flex;
+        width: 100%;
+        margin-top: 18px;
+
+        .btn {
+            width: 600px;
+            height: 50px;
+            border: 1px solid #178690;
+            border-radius: 5px;
+            font-size: 24px;
+            padding: 10px;
+            color: white;
+            background-color: #178690;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $boder-input;
+                border: 1px solid $boder-input;
+            }
+        }
+
+        .reset {
+            margin-left: 20px;
+            width: 200px;
+            height: 50px;
+            color: #178690;
+            font-weight: bold;
+            font-size: 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #178690;
+
+
+                color: white;
+            }
+        }
+    }
+
+}

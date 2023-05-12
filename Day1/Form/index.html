@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form name="infor" class="infor__top">
+                <fieldset name="form" class="form__infor">
+                    <div class="form__item__contact">
+                        <label for="contactname">Contact Name:</label>
+                        <input autofocus class="mgr-left-30" type="text" name="fist" placeholder="Fisrt">
+                        <input autofocus style="width: 30px; margin-right: 40px;margin-left: 40px;" type="text"
+                            name="MI" placeholder="MI" autofocus>
+                        <input autofocus type="text" name="last" placeholder="Last">
+                        <label style="margin-left: 150px;" for="companyname">Company Name:</label>
+                        <input autofocus style="width: 150px;" type="text" name="companyname"
+                            placeholder="Company name (Optianl)">
+                    </div>
+                    <div class="form__item_mail">
+                        <label for="mailaddress">Mail address:</label>
+                        <div class="flex-column">
+                            <input autofocus class="mgr-left-30" type="text" name="address"
+                                placeholder="address Line 1">
+                            <input autofocus class="mgr-left-30" type="text" name="address"
+                                placeholder="address Line 2 (Optianl)">
+                            <div class="flex-row">
+                                <input autofocus style="margin-left: 30px;height: 16px;width: 210px;" type="text"
+                                    name="city" placeholder="City" autofocus>
+                                <select>
+                                    <option value="">CA</option>
+                                    <option>BA</option>
+                                    <option>DA</option>
+                                    <option>QT</option>
+                                    <option>HP</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__item__zip">
+                        <label for="contactname">Contact Name:</label>
+                        <input autofocus type="text" name="zip" placeholder="Zip code">
+                        <input autofocus type="text" name="zip" placeholder="Zip+ (option)">
+                    </div>
+                    <div class="form__item__email">
+                        <div class="flex-row" style="margin-bottom: 16px;">
+                            <label style="align-self: end;" for="email">Contact Name:</label>
+                            <div class="flex-column">
+                                <h1 class="mgr-left-30" style="margin-bottom: 20px;">Mailing address must be in the USA
+                                </h1>
+                                <input autofocus type="email" name="email" placeholder="name@domain.com">
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <label style="align-self: end;" for="email">Type Email address:</label>
+                            <input autofocus type="email" name="email" placeholder="name@domain.com">
+                        </div>
+                        <div class="phone">
+                            <div class="flex-row">
+                                <label for="phone">Phone:</label>
+                                <input autofocus type="text" name="phone" placeholder="000000">
+                                <input autofocus type="text" name="phone" placeholder="000000">
+                                <input autofocus type="text" name="phone" placeholder="000000">
+                                <select>
+                                    <option value="phone">Please Select</option>
+                                    <optgroup label="Việt Nam">
+                                        <option value="hanoi">Hanoi</option>
+                                        <option value="hochiminh">Ho Chi Minh</option>
+                                        <option value="danang">Da Nang</option>
+                                        <option value="hainoi">Hai Phong</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="checkbox-1">
+                            <input type="checkbox" id="agree" name="agree" value="yes">
+                            <p>Yes,I'd like to receive text messages regarding changes to my account.Standard text
+                                message and data charges my apply your wireless provider</p>
+                            <a href="#">add another number </a>
+                        </div>
+                    </div>
+                    <div class="form__item__enroll">
+                        <label for="enroll"> Enroll to receive Fastrak News</label>
+                        <input type="checkbox" id="agree" name="agree" value="yes" autofocus>
+                        Yes,I'd like to receive updates, nes and promotions about FasTrak and related serviecs.
+                    </div>
+                    <div class="form__item__enroll">
+                        <label style="margin-left: 16px;" for="enroll"> SFO Parking program</label>
+                        <input style="margin-left: 20px !important;" type="checkbox" id="agree" name="agree" value="yes"
+                            autofocus>
+                        <p>Yes,Please opt me in,A valid credit card on the file is required to participate.
+                            For mor information about the Parking program <a href="">Click here</a></p>
+                    </div>
+                    <div class="form__item__monthly">
+                        <label for="monthly">How would you like your statement delivered?</label>
+                        <select>
+                            <option value="phone">Email Monthly(Free)</option>
+                            <optgroup label="Việt Nam">
+                                <option value="">mail-1</option>
+                                <option value="">mail-2</option>
+                                <option value="">mail-3</option>
+                                <option value="">mail-4</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                                        <div class="form__item__user">
+                                            <label for="username">UserName:</label>
+                                            <input type="text" name="username" autofocus placeholder="username" pattern="[a-zA-Z0-9_]{6,16}" required />
+                                            <p>The username must be 6 to 20 characters and contain at least 1 letter and number.</p>
+                                        </div>
+                                        <div class="form__item__password">
+                                            <label for="username">Password:</label>
+                                            <input type="password" name="password" autofocus placeholder="password"
+                                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,12}$" required />
+                                            <p>The password must be 8 to 12 character and contain at least 1 uppercase letter 1 lowercase
+                                                letter and 1 number</p>
+                                        </div>
+                                        
+                                        <div class="form__item__type-password">
+                                            <label for="username">Re-type Password</label>
+                                            <input type="password" name="password" autofocus placeholder="Re-type Password"
+                                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,12}$" required />
+                                        </div>
+                                        
+                                        
+                                        <div class="form__item__question">
+                                            <label for="Question">Security Question</label>
+                                            <select>
+                                                <option value="address">What City were you born in ?</option>
+                                                <optgroup label="Việt Nam">
+                                                    <option value="hanoi">Hanoi</option>
+                                                    <option value="hochiminh">Ho Chi Minh</option>
+                                                    <option value="danang">Da Nang</option>
+                                                    <option value="hainoi">Hai Phong</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div class="form__item__answer">
+                                            <label style="align-self: end;" for="pin">4-Ditgit PIN:</label>
+                                            <input autofocus type="text" name="pin" placeholder="4-Ditgit PIN"  required maxlength="4">
+                                        </div>
+                                        <div class="form__btn">
+                                            <button class="btn" type="button">NEXT:TOOL TAG & VEHICLES</button>
+                                            <button class="reset" type="reset">Cancel</button>
+                                        </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
