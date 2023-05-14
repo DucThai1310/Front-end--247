@@ -1,0 +1,24 @@
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height:50px;
+    background-color: #000;
+    color:#fff;
+    padding:0 10px;
+}
+.image,
+.menu,
+.sub-header,
+.text-header {
+    margin: auto;
+}
+header .text-header p {
+    padding-right:100px;
+}
+header .sub-header p {
+    padding-left:100px;
+}
+.cl-2 {
+    padding:0 10px;
+}
