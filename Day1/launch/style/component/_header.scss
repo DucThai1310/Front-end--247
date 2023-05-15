@@ -1,0 +1,92 @@
+.header {
+    @extend %form;
+    @extend %p-tb-20;
+
+    .header__left {
+        .logo {
+            font-size: 24px;
+            color: $dark;
+            font-weight: 700;
+        }
+    }
+
+    .header__right{
+        button{
+            margin-top: 10px;
+            width: 100px;
+            padding: 5px 22px;
+        }
+
+        .btn-outline{
+            border: 1px solid $boder-dark;
+            color: rgba(0, 0, 0, 0.5);
+            &:hover{
+                border: 1px solid $dark;
+                color:$dark;
+            }   
+        }
+    }
+
+    .menu {
+        ul {
+            .active {
+                a {
+                    color: $dark !important;
+                }
+            }
+
+            li {
+                a {
+                    padding: 10px 15px;
+                    padding-bottom: 0;
+                    display: inline-block;
+                    position: relative;
+                    color: rgba(0, 0, 0, 0.5);
+
+                    &:hover {
+                        color: $dark;
+                    }
+
+                }
+            }
+
+            .has-children {
+                position: relative;
+
+                &:hover>.dropdown {
+                    transition-delay: 0s;
+                    margin-top: 0px;
+                    visibility: visible;
+                    opacity: 1;
+                }
+
+                .dropdown {
+                    @extend %dropdown;
+                    .dropdown {
+                        position: absolute;
+                        left: 180px;
+                        top: 10px;
+                    }
+
+                    li {
+                        padding: 0;
+                        margin: 0;
+                        min-width: 180px;
+                        a{
+                            color: $dark;
+                        }
+                        a:hover{
+                            color: $color-blue;
+                        }
+                    }
+
+                    .right {
+                        position: absolute;
+                        right: -70px;
+                        top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

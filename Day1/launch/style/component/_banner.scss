@@ -1,0 +1,17 @@
+.banner {
+    padding: 6rem 0;
+
+    .heading {
+        @extend %heading-h1;
+        color: $dark;
+    }
+
+    .heading__text {
+        @extend %mg-tb-30;
+    }
+    button {
+        font-size: 15px;
+        padding: 15px 30px;
+        cursor: pointer;
+    }
+}
