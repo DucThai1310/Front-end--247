@@ -1,3 +1,10 @@
+@media screen and (min-width: 1600px){
+  .display-none-1 {
+    display: none;
+  }
+}
+
+
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
   .col {
     flex: 0 0 33.333333% !important;

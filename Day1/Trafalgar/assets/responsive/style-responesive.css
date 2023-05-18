@@ -1,9 +1,15 @@
 .header {
     max-width: 100%;
 }
-
+@media screen and (max-width:1600px) {
+    .header-top-menu-mobile{
+        display: none;
+    }
+}
 @media screen and (max-width:1280px) {
-
+    .header-top-menu-mobile{
+        display: none;
+    }
     /* header */
     .header-top {
         width: 90%;
@@ -121,7 +127,9 @@
 
 
 @media screen and (max-width:1024px) {
-
+    .header-top-menu-mobile{
+        display: none;
+    }
     /* header */
     header {
         height: 675px;
@@ -494,5 +502,8 @@
     }
     .nav-footer p {
         font-size: 16px;
+    }
+    .header-top-menu-mobile{
+        display: block;
     }
 }

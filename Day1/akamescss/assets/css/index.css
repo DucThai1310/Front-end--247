@@ -43,8 +43,8 @@
 }
 
 .col {
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
+  flex: 0 0 33.333333% !important;
+  max-width: 33.333333% !important;
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -486,7 +486,7 @@
 }
 
 .about-us-img img {
-  width: 350px;
+  width: 370px;
   height: auto;
   border-style: none;
 }
@@ -1324,6 +1324,11 @@
   scroll-behavior: smooth;
 }
 
+@media screen and (min-width: 1600px) {
+  .display-none-1 {
+    display: none;
+  }
+}
 @media screen and (min-width: 1024px) and (max-width: 1600px) {
   .col {
     flex: 0 0 33.333333% !important;
