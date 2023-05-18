@@ -12,5 +12,5 @@ document.write("<br>");
 document.write("<br>");
 alert("area = " + area);
 alert("Perimeter = " + perimeter);
-document.write("Perimeter =", perimeter, "<br>");
+document.write("<br>");
 document.write("Thank for using The Area and Perimeter application.")
