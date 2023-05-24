@@ -1,0 +1,56 @@
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height:100px;
+}
+nav img {
+   padding-left: 100px;
+}
+nav .menu {
+    padding-right: 100px;
+}
+nav .menu .fa-cart-shopping {
+    padding:0 15px 0 35px;
+}
+nav .menu a .fa-chevron-down {
+    font-size: 12px;
+    padding-left: 5px;
+}
+.hair-salon .hair-salon-container .btn-2,
+.hair-salon .hair-salon-container .btn-1,
+.our-work .our-work-button button,
+.content-title button,
+.wrapper .wrapper-title button,
+nav .menu button {
+    font-family: "Playfair Display", serif;
+    min-width: 150px;
+    height: 42px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 35px;
+    background-color: transparent;
+    color: #252525;
+    border: 1px solid #252525;
+    border-radius: 60px;
+}
+.hair-salon .hair-salon-container .btn-1,
+.content-title button {
+    background-color: #bca858;
+    color:#fff;
+}
+.hair-salon .hair-salon-container .btn-1:hover,
+.content-title button:hover {
+    background-color: #000;
+    color:#fff;
+    cursor: pointer;
+}
+.hair-salon .hair-salon-container .btn-2:hover,
+.our-work .our-work-button button:hover,
+.wrapper .wrapper-title button:hover,
+nav .menu button:hover {
+    background-color: #bca858;
+    color:#fff;
+    cursor: pointer;
+}
