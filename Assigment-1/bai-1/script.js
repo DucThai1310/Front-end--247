@@ -117,7 +117,6 @@ function findX2(a, b, c) {
 
 function resultFinX2() {
     var numEquations = parseInt(prompt("nhập số lần muốn thực hiện nghiệm : "));
-
     // Solve each quadratic equation
     for (var i = 1; i <= numEquations; i++) {
         document.write("giải phương trình #" + i);
@@ -130,7 +129,6 @@ function resultFinX2() {
         // Gọi hàm giải phương trình và in result
         var result = findX2(a, b, c);
         document.write(result);
-        console.log("------------------------");
     }
 }
 
@@ -146,4 +144,5 @@ window.onload = function () {
     // document.write('\n--------------------------\n');
     // bài 4
     resultFinX2();
+    document.write("<br>" + '--------------------------\n');
 }
