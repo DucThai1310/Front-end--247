@@ -74,13 +74,76 @@ function resultFinX() {
     document.write("<br>", "<br>", "bài 3 : Find ax - b = 0");
     document.write("<br>", "a =", a);
     document.write("<br>", "b =", b);
-    document.write("<br>", "x = ", x);
+    document.write("<br>", "x = ", x, "<br>");
 }
+
+// bài 4 ax2 + b + c = 0
+
+function findX2(a, b, c) {
+    // hàm delta có công thứ b^2 - 4ac
+    //     Nếu discriminant > 0, phương trình có hai nghiệm thực phân biệt.
+    // Nếu discriminant = 0, phương trình có một nghiệm kép(có hai nghiệm trùng nhau).
+    // Nếu discriminant < 0, phương trình có hai nghiệm phức phân biệt.
+    var delTa = b * b - 4 * a * c;
+
+    if (a === 0) {
+        if (b === 0) {
+            if (c === 0) {
+                return "Vô số nghiệm";
+            } else {
+                return "không có nghiệm";
+            }
+        } else {
+            var x = -c / b;
+            return "Nghiệm duy nhất: x = " + x.toFixed(2);
+        }
+        // Nếu delta > 0: Chương trình sẽ tính và trả về hai nghiệm thực phân biệt x1 và x2, được tính theo công thức x1 = (-b + √delta) / (2a) và x2 = (-b - √delta) / (2a).
+    } else if (delTa > 0) {
+        var x1 = (-b + Math.sqrt(delTa)) / (2 * a);
+        var x2 = (-b - Math.sqrt(delTa)) / (2 * a);
+        return "Hai nghiệm thực: x1 = " + x1.toFixed(2) + ", x2 = " + x2.toFixed(2);
+        // Nếu delta = 0: Chương trình sẽ tính và trả về nghiệm kép x = -b / (2a).
+    } else if (delTa === 0) {
+        var x = -b / (2 * a);
+        return "Nghiệm kép: x = " + x.toFixed(2);
+        // Nếu delta < 0: Chương trình sẽ tính và trả về hai nghiệm phức phân biệt x1 và x2, được hiển thị dưới dạng phần thực và phần ảo.
+    } else {
+        var realPart = -b / (2 * a);
+        var imaginaryPart = Math.sqrt(-delTa) / (2 * a);
+        return "<br>" + "nghiệm phức :" + "<br>" + "x1 = " + realPart.toFixed(2) + " + " + imaginaryPart.toFixed(2) + "i" + "<br>" +
+            " x2 = " + realPart.toFixed(2) + " - " + imaginaryPart.toFixed(2) + "i";
+    }
+}
+
+function resultFinX2() {
+    var numEquations = parseInt(prompt("nhập số lần muốn thực hiện nghiệm : "));
+
+    // Solve each quadratic equation
+    for (var i = 1; i <= numEquations; i++) {
+        document.write("giải phương trình #" + i);
+
+        // nhập giá trị a b c
+        var a = parseFloat(prompt("nhập giá trị của A cho phương trình # " + i + ": "));
+        var b = parseFloat(prompt("nhập giá trị của B cho phương trình #" + i + ": "));
+        var c = parseFloat(prompt("nhập giá trị của C cho phương trình #" + i + ": "));
+
+        // Gọi hàm giải phương trình và in result
+        var result = findX2(a, b, c);
+        document.write(result);
+        console.log("------------------------");
+    }
+}
+
 window.onload = function () {
-    // bài 1
-    swapValues();
-    // bài 2
-    resultAverage();
-    // bài 3
-    resultFinX();
+    // // bài 1
+    // swapValues();
+    // document.write('\n--------------------------\n');
+    // // bài 2
+    // resultAverage();
+    // document.write('\n--------------------------\n');
+    // // bài 3
+    // resultFinX();
+    // document.write('\n--------------------------\n');
+    // bài 4
+    resultFinX2();
 }
