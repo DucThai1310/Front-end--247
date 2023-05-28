@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        width: 500px;
+        border:1px solid red;
+        padding:20px;
+        margin:auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    button {
+        border: none;
+        background-color: blue;
+        color:#fff;
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin:10px 200px;
+    }
+    .error {
+        font-size: 14px;
+        color:red;
+    }
+</style>
+<body>
+    <form>
+        <h1>Login</h1>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <span class="error" id="username-error"></span>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <span class="error" id="password-error"></span><br>
+        <button id="btn" type="button">Summit</button>
+    </form>
+    <script src="js-day.js"></script>
+</body>
+</html>
