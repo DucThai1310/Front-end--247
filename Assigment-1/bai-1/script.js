@@ -81,7 +81,7 @@ function resultFinX() {
 
 function findX2(a, b, c) {
     // hàm delta có công thứ b^2 - 4ac
-    //     Nếu discriminant > 0, phương trình có hai nghiệm thực phân biệt.
+    // Nếu discriminant > 0, phương trình có hai nghiệm thực phân biệt.
     // Nếu discriminant = 0, phương trình có một nghiệm kép(có hai nghiệm trùng nhau).
     // Nếu discriminant < 0, phương trình có hai nghiệm phức phân biệt.
     var delTa = b * b - 4 * a * c;
@@ -131,7 +131,34 @@ function resultFinX2() {
         document.write(result);
     }
 }
+// bài 5 tính cộng 50 số nguyên
+function sum50Number() {
+    var sum = 0;
+    for (var i = 1; i <= 50; i++) {
+        sum += i;
+        console.log(sum)
+    }
+    return sum;
+}
+function resultSum() {
+    var sum = sum50Number();
+    document.write("Sum of the first 50 integer numbers: " + sum);
+}
 
+
+function fibonacciNumbers(count) {
+    // Khởi tạo với hai số Fibonacci đầu tiên
+    var fib = [0, 1];
+    // Tạo các số Fibonacci
+    for (var i = 2; i < count; i++) {
+        var nextNumber = fib[i - 1] + fib[i - 2];
+        fib.push(nextNumber);
+    }
+    // In ra các số Fibonacci
+    for (var i = 0; i < count; i++) {
+        console.log(fib[i]);
+    }
+}
 window.onload = function () {
     // // bài 1
     // swapValues();
@@ -143,6 +170,10 @@ window.onload = function () {
     // resultFinX();
     // document.write('\n--------------------------\n');
     // bài 4
-    resultFinX2();
-    document.write("<br>" + '--------------------------\n');
+    // resultFinX2();
+    // document.write("<br>" + '--------------------------\n');
+    //bài 5
+    // resultSum();
+    //bài 6
+    fibonacciNumbers(20);
 }
