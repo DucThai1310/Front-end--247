@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 87.5%;
+            width: 700px;
+            margin: 0 auto;
+            border: 3px solid blue;
+            padding: 15px 25px;
+        }
+
+        form {
+            max-width: 750px;
+            margin: 50px;
+        }
+
+        h1 {
+            text-align: left;
+        }
+
+        label {
+            width: 150px;
+            float: left;
+            margin-bottom: 20px;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        span {
+            color: red;
+            margin-left: 10px;
+        }
+
+        input,
+        select {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 5px 50px;
+            /* margin: 10px 200px; */
+            margin-right: 10px;
+        }
+
+        .contact {
+            display: flex;
+        }
+
+        .contact label {
+            width: fit-content;
+            margin-right: 10px;
+        }
+
+        .contact input {
+            width: 25px;
+
+        }
+
+        .term-css {
+            width: 26px;
+        }
+
+        .term {
+            width: fit-content;
+            float: none;
+            margin-bottom: 20px;
+        }
+
+        #register_info span {
+            color: red;
+        }
+        #register_info td{
+            padding: 10px 50px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Register for an Account</h1>
+    <form id="email_form" name="email_form">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email">
+        <!-- <span id="email-error">*</span> -->
+        <label for="phone">Mobile Phone :</label>
+        <input type="text" id="phone" name="phone">
+        <!-- <span id="phone-error">*</span> -->
+        <label for="country">CounTry</label>
+        <select for="country" id="country">
+            <option value="">Select an option</option>
+            <option value="VN">VN</option>
+            <option value="USA">USA</option>
+        </select>
+        <!-- <span id="country-error">*</span> -->
+        <label>Contact by me</label>
+        <div class="contact">
+            <input type="radio" id="text" name="contact" value="Text">
+            <label for="text">Text</label>
+            <input type="radio" id="email-contact" name="contact" value="Email">
+            <label for="email">Email</label>
+            <input type="radio" id="dont-contact" name="contact" value="don't contact me">
+            <label for="dont-contact">don't contact me</label>
+            <!-- <span id="contact-error">*</span> -->
+        </div>
+        <label>Terms of service</label>
+        <input type="checkbox" id="term-checkbox" name="term" class="term-css" value="yes">
+        <label for="term-checkbox" class="term">I accept.</label>
+        <!-- <span id="term-error">*</span><br> -->
+        <br>
+        <button type="button" id="register">Register</button>
+        <button type="reset" id="reset">reset</button>
+    </form>
+    <h2 id="register_bottom_header">&nbsp;</h2>
+    <table id="register_info"></table>
+    <script src="script.js"></script>
+</body>
+
+</html>
