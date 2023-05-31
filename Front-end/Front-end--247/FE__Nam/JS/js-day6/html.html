@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+        max-width: 500px;
+        margin: 50px;
+    }
+    
+    label {
+        width: 150px;
+        float: left;
+        margin-bottom: 20px;
+    }
+    
+    input,
+    select,
+    textarea {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    button {
+        padding: 5px 10px;
+        margin: 10px 100px;
+    }
+    
+    .contact {
+        display: flex;
+    }
+    
+    .contact label {
+        width: fit-content;
+    }
+    
+    .contact input {
+        width: 20px;
+        margin-right: 20px;
+    }
+    
+    input[name=term] {
+        width: fit-content;
+        float: none;
+    }
+</style>
+
+<body>
+    <form action="">
+        <label for="first-name">Fisrt Name:</label>
+        <input type="text" id="first-name" name="first-name">
+        <label for="comment">Comments</label>
+        <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="VN">VN</option>
+          <option value="USA">USA</option>
+      </select>
+        <label for="contact">Contact by me: </label>
+        <div class="contact">
+            <label for="text">Text</label>
+            <input type="radio" name="contact" id="text" value="Text">
+            <label for="email">Email</label>
+            <input type="radio" name="contact" id="email" value="Email">
+            <label for="mobile">Mobile</label>
+            <input type="radio" name="contact" id="mobile" value="Mobile">
+            <label for="iphone">Iphone</label>
+            <input type="radio" name="contact" id="iphone" value="Iphone">
+            <div>
+                <label>Term of Service: </label>
+                <input type="checkbox" id="term" name="term">
+                <label for="term" class="term">I accept: </label>
+                <button type="button" id="submit">Summit</button>
+                <button type="button" id="reset">Reset</button>
+    </form>
+    <div id="table"></div>
+    <script src="js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+  </head>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 650px;
+    margin: 0 auto;
+    border: 3px solid blue;
+    padding: 15px 25px;
+}
+h1 { 
+    font-size: 150%;
+}
+h2 {
+    font-size: 120%;
+    padding: .25em 0 .25em 25px;
+    cursor: pointer;
+    background: url(plus.png) no-repeat left center;
+}
+h2.minus {
+    background: url(minus.png) no-repeat left center;
+}
+a {
+    color: black;
+    text-decoration: none; 
+}
+a:focus, a:hover { color: blue; }
+
+div {
+    display: none;
+}
+div.open {
+    display: block;
+}
+ul {
+    padding-left: 45px;
+}
+li {
+    padding-bottom: .25em;
+}
+p {
+    padding-bottom: .25em;
+    padding-left: 25px;
+}
+  </style>
+  <body>
+    <main id="faqs">
+      <h1>JavaScript FAQs</h1>
+      <h2><a href="#">What is JavaScript?</a></h2>
+      <div>
+        <p>
+          JavaScript is a programming language that's built into the major web browsers. It makes
+          web pages more responsive and saves round trips to the server.
+        </p>
+      </div>
+      <h2><a href="#">What is jQuery?</a></h2>
+      <div>
+        <p>
+          jQuery is a library of the JavaScript functions that you're most likely to need as you
+          develop web sites.
+        </p>
+      </div>
+      <h2><a href="#">Why is jQuery becoming so popular?</a></h2>
+      <div>
+        <p>Three reasons:</p>
+        <ul>
+          <li>It's free.</li>
+          <li>It lets you get more done in less time.</li>
+          <li>All of its functions are cross-browser compatible.</li>
+        </ul>
+      </div>
+      <h2><a href="#">Why is jQuery becoming so popular?</a></h2>
+      <div>
+        <p>Three reasons:</p>
+        <ul>
+          <li>It's free.</li>
+          <li>It lets you get more done in less time.</li>
+          <li>All of its functions are cross-browser compatible.</li>
+        </ul>
+      </div>
+    </main>
+    <script>
+        // function $(id) {
+        //     return document.getElementById(id);
+        // }
+        // function clickQuestion(question, questionListElement) {
+        //     function clickQuestion(question,questionListElement) {
+        //     for (var index = 0 ; i < questionListElement.length ; index++ ) {
+        //         const questionElement = questionListElement[index];
+        //         questionElement.nextElementSibling.removeAttribute('class');
+        //         }
+        //     const answer = question.nextElementSibling;
+        //     answer.setAttribute('class','open');
+        //     }
+        // }
+        // window.onload = function() {
+        //     const faqs = $('faqs');
+        //     const questionListElement = faqs.getElementsByTagName('h2');
+        //     for( var index = 0 ;index < questionListElement.length; index++) {
+        //         const questionElement = questionListElement[index];
+        //         questionElement.onclick = function() {
+        //           clickQuestion(questionElement , questionListElement);
+        //         };
+        //     }
+        // }
+        function $(id) {
+    return document.getElementById(id);
+}
+function clickQuestion(question,questionListElement) {
+    //dòng hết các answer 
+  for (var index = 0 ; index < questionListElement.length ; index++ ) {
+    // lay cac phần tử câu hỏi
+    const questionElement = questionListElement[index];
+    //remove clas của các câu trả lời
+    questionElement.nextElementSibling.removeAttribute('class');
+  }
+  // set attribute class cho cái câu hỏi đang click
+  const answer = question.nextElementSibling;
+  answer.setAttribute('class','open');
+}
+// function clickQuestion() {
+//     const question = this;
+// }
+window.onload = function() {
+    // lấy faqs element
+    const faqsElement = $("faqs");
+    // lấy cả câu hỏi thông có cái tag
+    const questionListElement = faqsElement.getElementsByTagName("h2");
+    for (var index = 0 ; index < questionListElement.length ; index++ ) {
+        const questionElement = questionListElement[index];
+        // element.onclick = clickQuestion;
+        questionElement.onclick = function() {
+            clickQuestion(questionElement, questionListElement);
+        };
+    }
+    }
+    </script>
+  </body>
+</html>

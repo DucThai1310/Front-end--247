@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    form {
+        max-width: 700px;
+        width: 100%;
+        border: 1px solid #000;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    h1 {
+        color: blue;
+        margin-bottom: 10px;
+    }
+    
+    label {
+        width: 120px;
+        float: left;
+    }
+    
+    #country,
+    input {
+        width: 40%;
+        margin-bottom: 15px;
+    }
+    
+    .contact {
+        display: flex;
+    }
+    
+    input[type=radio] {
+        background-color: red;
+    }
+    
+    button {
+        padding: 5px 100px;
+        margin: 0 10px;
+    }
+    
+    #term {
+        width: 300px;
+    }
+    
+    .term {
+        float: right;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+    }
+    
+    p {
+        margin-bottom: 10px;
+    }
+    
+    .list {
+        display: flex;
+    }
+    
+    .list #span-email,
+    .list #span-phone,
+    .list #span-country,
+    .list #span-contact {
+        width: 100px;
+    }
+</style>
+
+<body>
+    <form>
+
+        <h1>Register for an Account</h1>
+        <label for="email">E-Mail:</label>
+        <input type="text" name="email" id="email"><br>
+        <label for="phone">Mobile Phone:</label>
+        <input type="text" name="phone" id="phone"><br>
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="VN">VN</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+        </select><br>
+        <span id="country-error"></span>
+        <label for="contact">Contact by me: </label>
+        <div class="contact">
+            <label for="text">Text</label>
+            <input type="radio" name="contact" id="text" value="Text">
+            <label for="email-checkbox">Email</label>
+            <input type="radio" name="contact" id="email-checkbox" value="Email">
+            <label for="mobile">Mobile</label>
+            <input type="radio" name="contact" id="mobile" value="Mobile">
+            <label for="iphone">Iphone</label>
+            <input type="radio" name="contact" id="iphone" value="Iphone"><br>
+        </div>
+        <label>Term of Service: </label>
+        <input type="checkbox" id="term" name="term">
+        <label for="term" class="term">I accept: </label><br>
+        <button type="button" id="submit">Summit</button>
+        <button type="button" id="reset">Reset</button>
+        <!-- <div id="table"></div>
+        <span id="table-error"></span> -->
+        <h2>Please review your entries and complete all requied fields</h2>
+        <div class="list">
+            <p id="span-email">Email: </p>
+            <span id="emails-error"></span>
+        </div>
+        <div class="list">
+            <p id="span-phone">Phone: </p>
+            <span id="phones-error"></span>
+        </div>
+        <div class="list">
+            <p id="span-country">Country: </p>
+            <span id="countrys-error"></span>
+        </div>
+        <div class="list">
+            <p id="span-contact">Contact: </p>
+            <span id="contacts-error"></span>
+        </div>
+        <p id="span-term">Terms: </p>
+        <div id="full"></div>
+    </form>
+    <script src="js1.js"></script>
+</body>
+
+</html>
