@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select {
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#student_form {
+    width: 300px;
+}
+
+#student_list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#student_list li {
+    margin-bottom: 5px;
+}
