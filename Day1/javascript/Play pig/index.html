@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid blue;
+        width: 600px;
+        height: auto;
+    }
+
+    h1 {
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    legend {
+        font-size: 20px;
+
+    }
+
+    fieldset {
+        margin-bottom: 15px;
+    }
+
+    ul li {
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    #player1,
+    #player2 {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    #score1,
+    #score2 {
+        margin-left: 10px;
+        width: 50px;
+        margin-right: 10px;
+        background-color: #E5E5E5;
+        border: 1px solid #D7D7D7;
+    }
+</style>
+
+<body>
+<form>
+    <h1>Let's Play PIG!</h1>
+    <fieldset>
+        <legend>Rules</legend>
+        <ul>
+            <li>First player to 100 wins</li>
+            <li>Player take turns rolling the die</li>
+            <li>Turn ends when player rolls a 1 or choose to hold</li>
+            <li>If player rolls a 1, they lose all point earned during the turn</li>
+            <li>If play holds, points earned during the turn are added to their total</li>
+        </ul>
+    </fieldset>
+    <label for="player1">Player 1</label>
+    <input type="text" id="player1" name="player1">
+    <label for="score1">Score</label>
+    <input type="text" id="score1" name="score1" value="0" disabled>
+    <br>
+    <label for="player2">Player 2</label>
+    <input type="text" id="player2" name="player2">
+    <label for="score2">Score</label>
+    <input type="text" id="score2" name="score2" value="0" disabled>
+    <button type="button" id="new_game">New Game</button>
+    <section id="turn">
+        <p><span id="current">&nbsp;</span></p>
+        <input type="button" id="roll" value="Roll">
+        <input style="margin-bottom: 16px;" type="button" id="hold" value="Hold"><br>
+        <label style="margin-right: 26px;margin-bottom: 20px;" for="die">Die</label>
+        <input type="text" id="die" value="0" disabled> <br><br>
+        <label style="margin-right: 16px" for="total">Total</label>
+        <input type="text" id="total" value="0" disabled>
+    </section>
+</form>
+    <script src="script.js"></script>
+</body>
+
+</html>
