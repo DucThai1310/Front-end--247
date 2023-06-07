@@ -1,0 +1,54 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    width: 700px;
+    margin: 0 auto;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+    /* height: 300px; */
+}
+
+h1 {
+    font-size: 150%;
+    color: blue;
+    margin-bottom: .5em;
+}
+
+label {
+    float: left;
+    width: 8em;
+}
+
+input {
+    width: 22em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+input[type=button] {
+    width: 10em;
+}
+
+#tasks {
+    margin-top: 0;
+    height: 100%;
+
+}
+
+#task_list {
+    width: 300px;
+    border: 2px solid burlywood;
+    min-height: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+p {
+    margin: 4px;
+    padding: 0;
+}
