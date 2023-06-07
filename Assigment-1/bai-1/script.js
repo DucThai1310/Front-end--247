@@ -200,6 +200,112 @@ function handleKeyPress(event) {
     console.log("Input Value: " + inputValue);
 }
 window.addEventListener("keydown", handleKeyPress);
+
+// bài 8 tính số 
+
+function getDaysInMonth() {
+    var month = parseInt(prompt("Enter a number between 1 and 12:"));
+    switch (month) {
+        case 1: // 1
+        case 3: // 3
+        case 5: // 5
+        case 7: // 7
+        case 8: // 8
+        case 10: // 10
+        case 12: // 12
+            alert("31 days");
+            break;
+        case 4: // 4
+        case 6: // 6
+        case 9: // 9
+        case 11: // 11
+            alert("30 days");
+            break;
+
+        case 2: // 2
+            // tính năm nhuận
+            var currentYear = new Date().getFullYear();
+            if ((currentYear % 4 === 0 && currentYear % 100 !== 0) || currentYear % 400 === 0) {
+                alert("29 days (leap year)");
+            } else {
+                alert("28 days");
+            }
+            break;
+
+        default:
+            alert("Invalid input. Please enter a number between 1 and 12.");
+            break;
+    }
+}
+// bài 9
+function greatestCommonDivisor(a, b) {
+    a = Math.abs(a);
+    b = Math.abs(b);
+
+    // Tìm greatestCommonDivisor bằng thuật toán Euclide
+    while (b !== 0) {
+        var remainder = a % b;
+        a = b;
+        b = remainder;
+    }
+    return a;
+}
+
+function calculateGCD() {
+    var a = parseInt(prompt("nhập số thứ 1:"));
+    var b = parseInt(prompt("nhập số thứ 2:"));
+
+    // Check if the inputs are valid numbers
+    if (isNaN(a) || isNaN(b)) {
+        alert("lỗi vui lòng nhập lại .");
+    } else {
+        var gcd = greatestCommonDivisor(a, b);
+        alert("Ước chung lớn nhất của " + a + " và " + b + " = " + gcd + ".");
+    }
+}
+
+
+// bài 10
+
+function printTriangleLeft() {
+    var N = parseInt(prompt("nhập số : "));
+
+    // Check if the input is a valid number
+    if (isNaN(N)) {
+        alert("lỗi vui lòng nhập lại.");
+        return;
+    }
+
+    // Print the triangle pattern
+    for (var i = 1; i <= N; i++) {
+        var row = "";
+        for (var j = 1; j <= i; j++) {
+            row += "*";
+        }
+        document.write("<br>",row);
+    }
+}
+
+
+function printTriangleRight() {
+    var N = parseInt(prompt("nhập số : "));
+
+    // Check if the input is a valid number
+    if (isNaN(N) || N <= 0) {
+        alert("lỗi vui lòng nhập lại.");
+        return;
+    }
+
+    // Print the triangle pattern
+    var triangle = "";
+    for (var i = 1; i <= N; i++) {
+        var spaces = " ".repeat(N - i);
+        var stars = "*".repeat(i);
+        triangle += spaces + stars + "\n";
+    }
+
+    console.log(triangle);
+}
 window.onload = function () {
     // // bài 1
     // swapValues();
@@ -218,6 +324,15 @@ window.onload = function () {
     //bài 6
     // fibonacciNumbers(20);
     //bài 7 
-    $('add_student').onclick = addStudent;
-    $("student_code").focus();
-}
+    // $('add_student').onclick = addStudent;
+    // $("student_code").focus();
+
+    // bài 8
+    // getDaysInMonth();
+    // bài 9
+    // calculateGCD();
+    // bài 10
+    // printTriangleLeft();
+    // bài 11
+    printTriangleRight();
+};
