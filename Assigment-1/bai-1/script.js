@@ -270,13 +270,13 @@ function calculateGCD() {
 function printTriangleLeft() {
     var N = parseInt(prompt("nhập số : "));
 
-    // Check if the input is a valid number
+    // kiểm tra nhập số
     if (isNaN(N)) {
         alert("lỗi vui lòng nhập lại.");
         return;
     }
 
-    // Print the triangle pattern
+    // tạo hình tam giác nằm bên góc trái
     for (var i = 1; i <= N; i++) {
         var row = "";
         for (var j = 1; j <= i; j++) {
@@ -290,13 +290,13 @@ function printTriangleLeft() {
 function printTriangleRight() {
     var N = parseInt(prompt("nhập số : "));
 
-    // Check if the input is a valid number
+    // kiểm tra nhập số
     if (isNaN(N) || N <= 0) {
         alert("lỗi vui lòng nhập lại.");
         return;
     }
 
-    // Print the triangle pattern
+    // tạo hình tam giác phải
     var triangle = "";
     for (var i = 1; i <= N; i++) {
         var spaces = " ".repeat(N - i);
