@@ -1,0 +1,62 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    width: 700px;
+    margin: 0 auto;
+    border: 3px solid blue;
+    padding: 0 2em 1em;
+}
+
+#task_list {
+    width: 300px;
+    border: 2px solid burlywood;
+    min-height: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+h1 {
+    font-size: 150%;
+    color: blue;
+    margin-bottom: .5em;
+}
+
+label {
+    float: left;
+    width: 8em;
+}
+
+input {
+    width: 22em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+input[type=button] {
+    width: 10em;
+}
+
+#tasks {
+    margin-top: 0;
+    height: 100%;
+
+}
+
+span {
+    margin: 5px 4px;
+    padding: 5px;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0 4px;
+}
