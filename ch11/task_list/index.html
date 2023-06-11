@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ch010 Task Manager</title>
+    <link type="text/css" rel="stylesheet" href="./css/task_list.css" />
+    <script src="./js/library_storage.js"></script>
+    <script src="./js/library_task.js"></script>
+    <script src="./js/library_task_list.js"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <h1>Task Manager</h1>
+    <main>
+      <div id="control">
+        <label for="task">Task</label><br />
+        <input type="text" name="task" id="task" /><br />
+
+        <input type="button" name="add_task" id="add_task" value="Add Task" />
+        <input type="button" name="clear_tasks" id="clear_tasks" value="Clear Tasks" /><br />
+      </div>
+      <div id="tasks">
+        <span id="name">&nbsp;</span>Tasks<br />
+        <div id="task_list"></div>
+      </div>
+    </main>
+  </body>
+</html>
