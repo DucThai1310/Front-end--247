@@ -1,0 +1,1 @@
+-do assignment for props and state

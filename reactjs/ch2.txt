@@ -1,0 +1,7 @@
+focus:
+   + Component
+   + css
+   + Props => Properties
+   + How to passed data to props
+   + ES6 with reactjs: export/import module, map, Spread (...) Operator, ... resParams,Promise,let/const
+   + State
