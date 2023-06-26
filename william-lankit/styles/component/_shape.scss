@@ -1,0 +1,46 @@
+.shape {
+    @include shape();
+
+    &__shape {
+        @include shape__shape();
+    }
+
+    &__shape>* {
+        @include shape-form();
+    }
+}
+
+.shape-2 {
+    @include shape();
+    margin-top: -30rem;
+
+    .shape__shape {
+        @include shape__shape();
+
+        .shape__shape>* {
+            @include shape-form();
+        }
+    }
+
+    svg {
+        color: #1B2A4E;
+    }
+}
+
+.shape-3 {
+    @include shape();
+    margin-top: -10rem;
+
+    .shape__shape {
+        @include shape__shape();
+
+        .shape__shape>* {
+            @include shape-form();
+        }
+
+    }
+
+    & svg {
+        color: #F1F4F8;
+    }
+}

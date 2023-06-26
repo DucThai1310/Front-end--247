@@ -1,0 +1,61 @@
+.business {
+    background-color: #F1F4F8;
+    padding-top: 17rem;
+
+    &__inner {
+        @include displayFlex(row, center, center, nowrap);
+        z-index: 1;
+
+        &_content {
+            width: 50%;
+
+            h2 {
+                padding-bottom: 2rem;
+                @include heading-h2();
+
+                span {
+                    color: #335eea;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                color: #506690 !important;
+                padding-bottom: 2rem;
+                font-size: 1.8rem;
+            }
+
+        }
+    }
+
+    &__content--list {
+        display: flex;
+        width: 80%;
+
+        .business__content--item {
+            width: calc(100% /3);
+
+            span {
+                font-size: 2.1rem;
+                color: #161C2D;
+                font-weight: 300;
+            }
+
+            .text-1 {
+                font-weight: 400;
+                color: #869ab8 !important;
+                font-size: 1.6rem;
+            }
+        }
+
+    }
+
+    &__image {
+        width: 50%;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}

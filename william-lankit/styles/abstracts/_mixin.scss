@@ -1,0 +1,65 @@
+@mixin displayFlex($flex-direction: row, $justify-content: center, $align-items: center, $wrap: wrap) {
+    display: flex !important;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-wrap: $wrap;
+}
+
+@mixin layoutImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin layoutNav {
+    background-color: #fff;
+    border-radius: 0.7rem;
+    box-shadow: 0 2.4rem 6.4rem #161c2d1a;
+}
+
+@mixin dflex-start {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+@mixin flex-start-all {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+@mixin heading-h2 {
+    font-weight: 300;
+    line-height: 4.1rem;
+    letter-spacing: -0.31px;
+    color: #161C2D;
+    font-size: 3.1rem;
+}
+
+@mixin shape {
+    position: relative;
+    height: 6rem;
+}
+
+@mixin shape__shape {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+@mixin shape-form {
+    display: block;
+    transform-origin: top center;
+    height: auto;
+    width: 100%;
+    transform: scale(2);
+    color: #F1F4F8;
+}

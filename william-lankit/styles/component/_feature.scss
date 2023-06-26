@@ -1,0 +1,28 @@
+.feature {
+    padding: 9rem 0 5rem;
+
+    &__inner {
+        display: flex;
+
+        .feature__item {
+            width: calc(100% / 3);
+            .feature__icon {
+                svg {
+                    height: 5rem;
+                    width: 5rem;
+                }
+            }
+            .heading-3 {
+                padding-bottom: 1rem;
+                font-weight: 300;
+                color: $heading-black1;
+                font-size: 2.1rem;
+            }
+            .text-1{
+                font-weight: 400;
+                color: #869ab8 !important;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

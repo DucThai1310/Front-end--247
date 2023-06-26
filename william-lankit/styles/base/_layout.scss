@@ -1,0 +1,24 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-family-base;
+    line-height: 1.6;
+    background-color: $bg-white;
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 89%;
+    max-width: 100rem;
+}

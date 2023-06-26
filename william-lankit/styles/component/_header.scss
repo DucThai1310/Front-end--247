@@ -1,0 +1,297 @@
+@keyframes show_menu {
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 0.8rem;
+    text-transform: uppercase;
+    color: $primary-blue;
+    padding: 1.5rem 0 1rem;
+    white-space: nowrap;
+}
+
+
+.header {
+    display: block;
+    margin: 24px 0;
+
+    .header__inner {
+        @include displayFlex(row,
+            space-between,
+            center,
+            nowrap);
+    }
+
+    .header__menu {
+        .header__menu--list {
+            @include displayFlex();
+        }
+
+        .header__menu--item {
+            position: relative;
+            transition: all 0.5s;
+
+            .dropdonwn__doc--content {
+                p {
+                    margin-bottom: 10px;
+                }
+                margin-left: 55px;
+                position: relative;
+            }
+
+            .dropdown {
+                display: none;
+                position: absolute;
+                z-index: 100;
+                top: 100%;
+                opacity: 0;
+
+                &-landings {
+                    left: -250px;
+                }
+
+                &-pages {
+                    left: -250px;
+                }
+
+                &-account {
+                    left: -50px;
+                }
+
+                &-doc {
+                    left: -100px;
+                }
+            }
+
+            &:hover {
+                .dropdown {
+                    display: block;
+                    opacity: 1;
+                    animation: show_menu 0.3s ease;
+                }
+            }
+        }
+
+
+
+        .header__menu--link {
+            display: block;
+            font-size: 17px;
+            color: $text-blue1;
+            padding: 8px 24px;
+            transition: color 0.25s;
+            font-weight: 400;
+
+            &:hover {
+                color: $primary-blue;
+            }
+        }
+    }
+
+    .dropdown {
+        a {
+            padding: 0rem 1.5rem 1.1rem 0;
+            color: $text-blue1;
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+
+            span {
+                color: $primary-blue;
+                font-size: 1.3rem;
+            }
+
+            &:hover {
+                color: $primary-blue;
+            }
+        }
+
+        .list__item {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .list__item+.list__item {
+            padding-left: 5.6rem;
+        }
+
+        &__landings {
+            @include layoutNav;
+        }
+
+        &__pages {
+            @include layoutNav;
+        }
+
+        &__account {
+            @include layoutNav;
+        }
+
+        &__doc {
+            @include layoutNav;
+            width: 300px;
+        }
+
+        &__landings {
+            display: flex;
+            background-color: $white;
+            overflow: hidden;
+            width: 700px;
+
+            &--left {
+                background-image: url("../image/photo-3.jpg");
+                @include layoutImage;
+                width: 50%;
+                @include displayFlex();
+                position: relative;
+
+                .content {
+                    text-align: center;
+                    position: relative;
+                    z-index: 3;
+                    color: $white;
+
+                    h4 {
+                        font-size: 1.9rem;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba($primary-blue, $alpha: 0.7);
+                }
+            }
+
+            &--right {
+                width: 50%;
+                @include displayFlex(row, flex-start, center, nowrap);
+                padding: 20px 40px;
+            }
+        }
+
+        &__pages {
+            display: flex;
+            width: fit-content;
+            padding: 2rem 4rem;
+        }
+
+        &__account {
+            @include displayFlex(column, center, space-between, nowrap);
+            padding: 1.5rem 0;
+
+            a {
+                @include displayFlex(row, space-between, center, nowrap);
+                padding: 0.5rem !important;
+            }
+
+            span {
+                font-size: 1.9rem !important;
+                color: $text-blue1 !important;
+                padding-left: 4rem;
+            }
+
+            li {
+                position: relative;
+                padding: 0 3rem;
+                z-index: 2;
+
+                .dropdown {
+                    position: absolute;
+                    z-index: 3;
+                    left: 101%;
+                    top: -1.5rem !important;
+                    display: none !important;
+                    width: 100%;
+                    padding: 1rem 0;
+                    border-radius: 0.7rem;
+                    box-shadow: 0 2.4rem 6.4rem #161c2d1a;
+                    background-color: #fff;
+                }
+
+                &:hover {
+                    .dropdown {
+                        display: block !important;
+
+                        a {
+                            padding: 1rem 0rem 1rem 3rem !important;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &__doc {
+            padding: 1rem 2rem 1rem 3rem;
+
+            &--icon {
+                margin: 1rem;
+                padding-top: 1rem;
+                position: absolute;
+                svg {
+                    height: 3.6rem;
+                    width: 3.6rem;
+                }
+            }
+
+            .version {
+                position: absolute;
+                bottom: 45px;
+                right: 30px;
+                display: block;
+                width: 6rem;
+                margin-left: 3rem;
+                border-radius: 1rem;
+                text-align: center;
+                background-color: rgba(51, 94, 234, 0.1);
+                color: #335eea !important;
+            }
+        }
+
+        &--item {
+            @include displayFlex(row, flex-start, center, nowrap);
+            padding-bottom: 1.6rem;
+            padding: 0 !important;
+
+            &:hover {
+                p {
+                    color: $text-blue1 !important;
+                }
+            }
+        }
+
+    }
+    .dropdown__doc--item{
+        border-bottom: 1px solid black;
+    }
+}

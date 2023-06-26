@@ -1,0 +1,52 @@
+.welcome {
+    padding-top: 10rem;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+
+        .welcome__content {
+            width: 50%;
+            padding: 4rem 0rem;
+
+            .heading-1 {
+                padding-top: 1rem;
+                margin-bottom: 1.6rem;
+                font-weight: 100;
+                letter-spacing: -0.96px;
+                color: $heading-black1;
+                font-size: 4.6rem;
+
+                span {
+                    color: #335eea;
+                }
+            }
+
+            .text-3 {
+                padding-bottom: 4.8rem;
+                font-weight: 300;
+                color: #869ab8 !important;
+                font-size: 2rem;
+                padding-right: 90px;
+            }
+
+            .welcome__btn {
+                button {
+                    margin-right: 10px;
+
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+
+            }
+        }
+
+        .welcome__image {
+            width: 50%;
+            img {
+                max-width: 62rem;
+            }
+        }
+    }
+}

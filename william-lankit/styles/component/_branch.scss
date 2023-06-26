@@ -1,0 +1,23 @@
+.branch {
+    margin-top: 5rem;
+    border-top: 1px solid #ecebeb;
+    border-bottom: 1px solid #e6e6e6;
+
+    &__inner {
+        @include displayFlex(row,
+            space-between,
+            center,
+            nowrap);
+
+        .branch__item {
+            width: calc(100% / 6);
+            margin: 5rem 0;
+
+            svg {
+                color: $text-blue2;
+                height: inherit;
+                max-width: inherit;
+            }
+        }
+    }
+}
