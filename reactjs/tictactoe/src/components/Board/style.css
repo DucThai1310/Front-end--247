@@ -1,0 +1,13 @@
+.board-list {
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+}

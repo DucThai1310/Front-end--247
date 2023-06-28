@@ -1,5 +1,11 @@
-import '../../styles/todo-list.css';
+import './todo-list.css';
 import Todo from '../Todo';
+const student = {
+  id: '1',
+  name: 'thanh',
+};
+const { id, name } = student;
+console.log(id, name);
 function ListTodo(props) {
   const { listTodo, deleteTodo, changeStatusTodo } = props;
   return (

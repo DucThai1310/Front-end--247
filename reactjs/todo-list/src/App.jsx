@@ -19,7 +19,6 @@ function App() {
     setListTodo(cloneListTodo);
   };
   const changeStatusTodo = (id, newStatus) => {
-    console.log("🚀 ~ file: App.jsx:22 ~ changeStatusTodo ~ newStatus:", newStatus)
     const indexTodo = listTodo.findIndex(todo => todo.id == id);
     const cloneListTodo = [...listTodo];
     cloneListTodo[indexTodo].status = newStatus;
