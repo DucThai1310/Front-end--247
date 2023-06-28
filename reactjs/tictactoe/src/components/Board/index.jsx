@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Square from '../Square';
 import './style.css';
 import { calculatorWinner } from '../../utils';
@@ -8,25 +8,32 @@ function Board(props) {
   const [winner, setWinner] = useState('');
   const [history, setHistory] = useState([Array(9).fill(' ')]);
 
+  useEffect(() => {
+    //check again winner last history
+    console.log('change history');
+    const lastHistory = history[history.length - 1];
+    const newWinner = calculatorWinner(lastHistory);
+    setWinner(newWinner);
+  }, [history]);
+
+  //winner ="" => winner="X"|"O"
+  useEffect( () => {  
+    if (winner) {
+      alert(`Player ${winner} winner!`);
+    }
+  }, [winner]);
+
   const onClickSquare = index => {
     if (!winner) {
       const newListSquare = [...history[history.length - 1]];
       newListSquare[index] = xIsNext ? 'X' : 'O';
       setHistory([...history, newListSquare]);
       setXIsNext(!xIsNext);
-      const newWinner = calculatorWinner(newListSquare);
-      if (newWinner) {
-        setWinner(newWinner);
-      }
-    } else {
-      alert('we have a winner!');
     }
   };
   const moveToHistory = index => {
-    const newHistory = history.slice( 0, index + 1 );
-    //check again winner last history
-    const newWinner = calculatorWinner(newHistory[newHistory.length - 1]);
-    setWinner(newWinner);
+    const newHistory = history.slice(0, index + 1);
+
     setHistory(newHistory);
   };
   return (
