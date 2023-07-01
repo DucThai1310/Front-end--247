@@ -18,7 +18,7 @@ import Board from './components/Board';
 //   componentWillUnmount() {
 //     console.log('componentWillUnmount!');
 //   }
-//   counter = () => {
+//   counter = () => { 
 //     this.setState({ ...this.state, count: this.state.count + 1 });
 //   };
 //   render() {
@@ -60,7 +60,9 @@ function App() {
   //   console.log('count1:(componentDidUpdate)', count1);
   //   console.log('count2:(componentDidUpdate)', count2);
   // }, [count1]);
-
+  // useEffect( () => {
+  //   console.log(count1);
+  // } )
   const counter1 = () => {
     setCount1(count1 + 1);
   };

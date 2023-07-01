@@ -1,0 +1,35 @@
+.product {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 10px 5px;
+}
+
+.product__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.product__image img {
+  width: 50%;
+}
+
+.product__add button {
+  padding: 7px 10px;
+  background-color: yellow;
+  color: black;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.product__title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #438396;
+}

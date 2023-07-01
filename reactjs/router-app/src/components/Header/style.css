@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #394959;
+  color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+}
+
+button span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -10px;
+  right: -5px;
+  z-index: 2;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+
+  color: white;
+}
