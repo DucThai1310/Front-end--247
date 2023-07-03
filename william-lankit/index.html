@@ -398,24 +398,27 @@
                     </div>
                     <form class="about__form--form" id="form-1">
                         <label for="name">
-                            <input type="text" id="name" name="name" autocomplete="off" placeholder="Name">
+                            <input type="text" id="name" name="name"  placeholder="Name" >
                         </label>
-                        <span class="error-form"></span>
+                        <div class="error" id="nameError"></div>
+
+
                         <label for="email">
-                            <input type="text" id="email" name="email" autocomplete="off" placeholder="Email">
+                            <input type="text" id="email" name="email" placeholder="Email">
                         </label>
-                        <span class="error-form"></span>
+                        <div class="error" id="emailError"></div>
                         <label for="password">
-                            <input type="password" id="password" name="password" placeholder="Password">
+                            <input type="password" id="password" name="password" placeholder="Password" >
                         </label>
-                        <span class="error-form"></span>
-                        <button class="btn btn__green" id="download">Download a sample</button>
+                        <div class="error" id="passwordError"></div>
+
+                        <button type="submit" class="btn btn__green" id="submitButton">Download a sample</button>
 
                     </form>
                 </div>
                 <div class="about__content">
                     <h2 class="heading-2">The most useful resource <br>
-                        <span>ever created for developer</span>
+                        <span class="animated-text"> </span>
                     </h2>
                     <p class="text-2">Using Landkit to build your site means never worrying about designing another page
                         or cross
@@ -523,7 +526,33 @@
                     </div>
                     <div class="testimonials__slider--card">
                         <div class="testimonials__slider--card--list">
-                            <div class="testimonials__slider--item">
+                            <div class="testimonials__slider--item" id="slide-1">
+                                <div class="testimonials__slider--logo">
+                                    <img src="./image/logo-instagram.svg" alt="">
+                                </div>
+                                <p class="testimonials__slider--content">
+                                    “I've never used a theme as versatile and flexible as Landkit. It's my go to for
+                                    building landing
+                                    sites
+                                    on
+                                    almost any project.”
+                                </p>
+                                <h3 class="testimonials__slider--author">Russ D'Sa</h3>
+                            </div>
+                            <div class="testimonials__slider--item" id="slide-2">
+                                <div class="testimonials__slider--logo">
+                                    <img src="./image/logo-airbnb.svg" alt="">
+                                </div>
+                                <p class="testimonials__slider--content">
+                                    “I've never used a theme as versatile and flexible as Landkit. It's my go to for
+                                    building landing
+                                    sites
+                                    on
+                                    almost any project.”
+                                </p>
+                                <h3 class="testimonials__slider--author">Russ D'Sa</h3>
+                            </div>
+                            <div class="testimonials__slider--item" id="slide-3">
                                 <div class="testimonials__slider--logo">
                                     <img src="./image/logo-instagram.svg" alt="">
                                 </div>
@@ -563,7 +592,7 @@
                     <div class="business__content--list">
                         <div class="business__content--item">
                             <span>
-                                <span class="Satisfaction">100</span>%
+                                <span class="Satisfaction">%</span>
                             </span>
                             <p class="text-1">Satisfaction</p>
                         </div>
@@ -575,7 +604,7 @@
                         </div>
                         <div class="business__content--item">
                             <span>
-                                <span class="number-sales">100</span>k+
+                                <span class="number-sales">k+</span>
                             </span>
                             <p class="text-1">Sales</p>
                         </div>
@@ -614,8 +643,8 @@
                         </span><br>
                         <div class="pricing__card--price">
                             <span class="icon">$</span>
-                            <span class="number">49</span>
-                            <span class="month">/mo</span>
+                            <span id="number" class="number">49</span>
+                            <span class="month">/month</span>
                         </div>
                         <p class="text-1">per seat</p>
 
@@ -725,10 +754,16 @@
                 </svg>
             </div>
         </div>
-        <div class="footer" style="height:100px; background-color: aliceblue;">
-
+        <div class="footer">
+            <div class="container footer__inner">
+                
+            </div>
         </div>
     </div>
+    <script src="js/count.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/runtext.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>

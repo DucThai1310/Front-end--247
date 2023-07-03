@@ -776,6 +776,10 @@ h6 {
   font-size: 1.3rem;
   color: red;
 }
+.about .error {
+  color: red;
+  font-size: 1.2rem;
+}
 
 .testimonials__inner {
   position: relative;
@@ -883,7 +887,7 @@ h6 {
 }
 .testimonials__inner--slider .testimonials__slider--card--list .testimonials__slider--item {
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
   flex-direction: column;
   align-items: center;
