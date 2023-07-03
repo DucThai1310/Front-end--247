@@ -48,7 +48,6 @@ var joinList = function () {
         $("register_info").innerHTML = html;
         if (isRegistered) {
             window.location.href = "finish.html"; 
-            // Thay đổi URL tới trang khác ở đây
         } else {
             isRegistered = true;
         }

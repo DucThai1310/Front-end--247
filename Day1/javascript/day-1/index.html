@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Information Management</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <h1>Student Information</h1>
+    <form id="student_form">
+        <label for="student_code">Student Code:</label>
+        <input type="text" id="student_code">
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name">
+        <label for="student_age">Student Age:</label>
+        <input type="number" id="student_age">
+        <label for="student_sex">Student Sex:</label>
+        <select id="student_sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <button type="button" id="add_student">Add Student</button>
+    </form>
+    <h2>Student List</h2>
+    <ul id="student_list"></ul>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
