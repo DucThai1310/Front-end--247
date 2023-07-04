@@ -3,7 +3,13 @@ import './App.css';
 import ProductList from './components/ProductList';
 import Header from './components/Header';
 import { useEffect, useState } from 'react';
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Detail from './components/Detail';
+import Cart from './components/Cart';
+import PublicLayout from './layout/Public';
+import PrivateLayout from './layout/Private';
+import AdminPage from './Page/Admin';
+import Login from './Page/Login';
 function App() {
   const [products, setProducts] = useState([]);
   const [carts, setCarts] = useState([]);
@@ -27,11 +33,43 @@ function App() {
       }
     }
   };
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <PublicLayout carts={carts} />,
+      children: [
+        {
+          path: '/',
+          element: <ProductList products={products} addCard={addCard} />,
+        },
+        {
+          path: '/detail/:id',
+          element: <Detail />,
+        },
+        {
+          path: '/carts',
+          element: <Cart />,
+        },
+      ],
+    },
+    {
+      path: '/login',
+      element: <Login />,
+    },
+    {
+      path: '/admin',
+      element: <PrivateLayout carts={carts} />,
+      children: [
+        {
+          path: '/admin',
+          element: <AdminPage />,
+        },
+      ],
+    },
+  ]);
   return (
     <div className='App'>
-      <Header carts={carts} />
-
-      <ProductList products={products} addCard={addCard} />
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
