@@ -1,0 +1,328 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none !important;
+    padding:15px;
+    color:#000;
+    font-size: 16px;
+}
+#container {
+    width:100vw;
+    height:100vh;
+}
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height:50px;
+    background-color: #000;
+    color:#fff;
+    padding:0 10px;
+}
+.image,
+.menu,
+.sub-header,
+.text-header {
+    margin: auto;
+}
+header .text-header p {
+    padding-right:100px;
+}
+header .sub-header p {
+    padding-left:100px;
+}
+.cl-2 {
+    padding:0 10px;
+}
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height:100px;
+}
+nav img {
+   padding-left: 100px;
+}
+nav .menu {
+    padding-right: 100px;
+}
+nav .menu .fa-cart-shopping {
+    padding:0 15px 0 35px;
+}
+nav .menu a .fa-chevron-down {
+    font-size: 12px;
+    padding-left: 5px;
+}
+.content-title button,
+.wrapper .wrapper-title button,
+nav .menu button {
+    font-family: "Playfair Display", serif;
+    min-width: 150px;
+    height: 42px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 35px;
+    background-color: transparent;
+    color: #252525;
+    border: 1px solid #252525;
+    border-radius: 60px;
+}
+.content-title button {
+    background-color: #bca858;
+    color:#fff;
+}
+.content-title button:hover {
+    background-color: #000;
+    color:#fff;
+    cursor: pointer;
+}
+.wrapper .wrapper-title button:hover,
+nav .menu button:hover {
+    background-color: #bca858;
+    color:#fff;
+    cursor: pointer;
+}
+.wrapper {
+    position: relative;
+}
+.wrapper .wrapper-img img {
+    object-fit: cover;
+    max-width: 100%;
+    height:720px;
+}
+.wrapper .wrapper-title{
+  width: 570px;
+  padding:0 24px;
+  margin:auto;
+  position: absolute;
+  left:30%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+.wrapper .wrapper-title h1 {
+    font-size: 72px;
+    display: block;
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    color: #252525;
+    line-height: 1.3;
+    font-weight: 400;
+}
+.wrapper .wrapper-title p {
+    font-size: 20px;
+    color: #252525;
+    margin-bottom: 50px;
+    display: block;
+    line-height: 1.7;
+    font-weight: 400;
+}
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 12%;
+    height:520px;
+}
+.content-img,
+.content-title,
+.content-heading {
+    width: 33.333%;
+    margin:auto;
+}
+.content-heading h2 {
+    position: absolute;
+    top:40%;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #252525;
+    font-weight: 400;
+    width: 353px;
+}
+.content-heading p {
+    position: absolute;
+    top:50%;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6e6e6e;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 353px;
+}
+.content-heading span {
+    font-size: 100px;
+    color: #bca858;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    line-height: 1;
+    opacity: 0.1;
+    font-weight: 700;
+}
+.content-img img {
+    width: 350px;
+    padding:0 10px;
+}
+.content-title {
+    height:400px;
+    padding-left:40px;
+}
+.content-title h3 {
+    display: block;
+    margin-bottom: 15px;
+    font-family: "Playfair Display", serif;
+    color: #252525;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 28px;
+}
+.content-title p {
+    line-height: 1.7;
+    color: #6e6e6e;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.border {
+    border-bottom: 1px solid #333;
+    margin: 0 12%;
+}
+.list {
+    padding: 0 12%;
+    text-align: center;
+    height:564px;
+    display: flex;
+    flex-direction: column;
+}
+.list-top {
+    padding-top:80px;
+    margin-bottom: 50px;
+}
+.list .list-top h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: #252525;
+    font-family: "Playfair Display", serif;
+}
+.list .list-top p {
+    line-height: 1.7;
+    color: #6e6e6e;
+    font-size: 18px;
+    font-weight: 400;
+}
+.list-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.list-bottom .list-services {
+    width: 25%;
+    padding:40px 15px;
+    margin:0 15px;
+    margin-bottom: 80px;
+    border:1px solid #333;
+}
+.list-bottom .list-services:hover h4 {
+    color:#bca858;
+}
+.list-bottom .list-services:hover {
+    box-shadow: -1px 1px 20px rgba(0,0,0,.1),
+                1px -1px 20px rgba(0,0,0,.1)
+    ;
+}
+.list-bottom .list-services img {
+    height:51px;
+    width:53px;
+}
+.list-bottom .list-services h4 {
+    color: #252525;
+    line-height: 1.3;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.list-bottom .list-services p {
+margin-bottom: 0;
+line-height: 1.7;
+color: #6e6e6e;
+font-size: 18px;
+font-weight: 400;
+margin-top: 0;
+}
+.choose {
+    position: relative;
+   display: flex;
+   padding:0 12%;
+   height:570px;
+   padding-top: 80px;
+   background-color: #f6f9f9 ;
+}
+.choose .choose-title,
+.choose .choose-image {
+    width: 540px;
+    position: relative;
+}
+
+.choose .choose-image::after {
+    position:absolute;
+    content:"";
+    background-color: #ebebeb;
+    border-radius: 4px;
+    top:30px;
+    right:-30px;
+    height: 380px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    width: 510px;
+}
+.choose .choose-image img {
+    width: 510px;
+    height:380px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+}
+.choose .choose-title {
+    padding: 0 10px;
+    margin: 60px 0 0 5%;
+}
+.choose .choose-title h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+.choose .choose-title p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6e6e6e;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.choose .choose-title .choose-content {
+    margin-bottom: 80px;
+    position: relative;
+    margin-top: 30px;
+}
+.choose .choose-title .choose-content li {
+    list-style-type: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+.choose .choose-title .choose-content i {
+    color:#bca858;
+    margin-right: 10px;
+    font-size: 20px;
+}
