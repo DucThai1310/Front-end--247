@@ -23,9 +23,9 @@ checkbox.addEventListener('click', function () {
 
 checkbox.addEventListener('change', function () {
     if (checkbox.checked) {
-        intervalId = setInterval(decreaseValue, 100);
+        intervalId = setInterval(decreaseValue, 50);
     } else {
-        intervalId = setInterval(increaseValue, 100);
+        intervalId = setInterval(increaseValue, 50);
     }
 });
 
@@ -61,4 +61,4 @@ function incrementValue() {
     }
 }
 
-const interval = setInterval(incrementValue, 500);
+const interval = setInterval(incrementValue, 50);
