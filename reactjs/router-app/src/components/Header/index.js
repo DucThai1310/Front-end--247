@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import CartModal from '../CartModal';
 import './style.css';
 function Header(props) {
-  const { carts } = props;
+  const { carts, setCarts } = props;
   const [isOpenModal, setIsOpenModal] = useState(false);
   return (
     <div className='header'>
@@ -13,7 +13,7 @@ function Header(props) {
         <FontAwesomeIcon icon={faShoppingCart} fontSize={20} color='white' />
         <span>{carts.length}</span>
       </button>
-      {isOpenModal && <CartModal setVisible={setIsOpenModal} />}
+      {isOpenModal && <CartModal setVisible={setIsOpenModal} carts={carts} setCarts={setCarts} />}
     </div>
   );
 }

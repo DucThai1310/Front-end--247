@@ -36,7 +36,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <PublicLayout carts={carts} />,
+      element: <PublicLayout carts={carts} setCarts={setCarts} />,
       children: [
         {
           path: '/',
@@ -58,7 +58,7 @@ function App() {
     },
     {
       path: '/admin',
-      element: <PrivateLayout carts={carts} />,
+      element: <PrivateLayout carts={carts} setCarts={setCarts} />,
       children: [
         {
           path: '/admin',
