@@ -5,3 +5,4 @@
   - Link: Component
   - useNavigate: Hook
   - Navigate: Component
+  - useParams : hook

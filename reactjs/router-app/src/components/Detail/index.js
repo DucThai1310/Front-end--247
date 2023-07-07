@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 function Detail(props) {
-  const { id } = useParams('id');
+  const params = useParams();
+  console.log("🚀 ~ file: index.js:6 ~ Detail ~ params:", params)
   const [product, setProduct] = useState(undefined);
-  console.log('🚀 ~ file: index.js:7 ~ Detail ~ product:', product);
   useEffect(() => {
-    if (id) {
-      fetch(`https://fakestoreapi.com/products/${id}`)
+    if (params.id) {
+      fetch(`https://fakestoreapi.com/products/${params.id}`)
         .then(res => res.json())
         .then(json => setProduct(json));
     }
-  }, [id]);
+  }, [params.id]);
   return (
     <div>
       {product && (

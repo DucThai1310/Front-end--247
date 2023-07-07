@@ -43,7 +43,7 @@ function App() {
           element: <ProductList products={products} addCard={addCard} />,
         },
         {
-          path: '/detail/:id',
+          path: '/detail/:productId',
           element: <Detail />,
         },
         {
