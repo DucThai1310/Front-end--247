@@ -5,12 +5,12 @@ export const sideBarConfig = [
     link: '/',
   },
   {
-    title: 'New Task',
+    title: 'Todo Task',
     id: 'new-task',
     link: '/new-task',
   },
   {
-    title: 'Doing Task',
+    title: 'InProgress Task',
     id: 'doing-task',
     link: 'doing-task',
   },
@@ -18,5 +18,10 @@ export const sideBarConfig = [
     title: 'Done Task',
     id: 'done-task',
     link: '/done-task',
+  },
+  {
+    title: 'Create Task',
+    id: 'create-task',
+    link: '/create-task',
   },
 ]; 

@@ -14,8 +14,8 @@ function SideBar() {
             </NavLinkCustom>
           );
         })}
-        <Button $showColor={'#BF4F74'}>Show/Hide</Button>
-        <ButtonNotHover $showColor={'#BF4F74'}>Show/Hide</ButtonNotHover>
+        {/* <Button $showColor={'#BF4F74'}>Show/Hide</Button>
+        <ButtonNotHover $showColor={'#BF4F74'}>Show/Hide</ButtonNotHover> */}
       </nav>
     </SideBarContainer>
   );
@@ -38,29 +38,29 @@ const SideBarContainer = styled.div`
     padding: 20px;
   }
 `;
-const Button = styled.button`
-  background: ${props => props.$showColor};
-  color: 'white';
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid #bf4f74;
-  border-radius: 3px;
-`;
+// const Button = styled.button`
+//   background: ${props => props.$showColor};
+//   color: 'white';
+//   font-size: 1em;
+//   margin: 1em;
+//   padding: 0.25em 1em;
+//   border: 2px solid #bf4f74;
+//   border-radius: 3px;
+// `;
 
-const ButtonNotHover = styled(Button)`
-  &:hover {
-    color: white;
-  }
-`;
+// const ButtonNotHover = styled(Button)`
+//   &:hover {
+//     color: white;
+//   }
+// `;
 const NavLinkCustom = styled(NavLink)`
   &.active {
     background-color: #ff7777;
   }
-  & ~ & {
+  /* & ~ & {
     background-color: #3767f7;
   }
   & + & {
     background-color: #3767f7;
-  }
+  } */
 `;
