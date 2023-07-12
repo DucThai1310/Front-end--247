@@ -1,0 +1,4 @@
+- context 
+- reducer 
+- context + reducer
+- redux

@@ -1,13 +1,15 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import { Router } from './router';
+import { TaskContextProvider } from './context';
 
 function App() {
-  
   return (
-    <BrowserRouter>
-      <Router />
-    </BrowserRouter>
+    <TaskContextProvider>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </TaskContextProvider>
   );
 }
 

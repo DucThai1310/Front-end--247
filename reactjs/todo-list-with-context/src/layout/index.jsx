@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Header from '../components/Header';
 import SideBar from '../components/Sidebar';
 import { Outlet } from 'react-router-dom';
+import { TaskContext } from '../context';
 
-function Layout(props) {
-  const [tasks, setTasks] = useState([]);
+function Layout() {
+  const { tasks, setTasks } = useContext(TaskContext);
   return (
     <div>
       <Header />

@@ -1,12 +1,15 @@
+import { useContext } from 'react';
 import { useState } from 'react';
+import { TodoContext } from '../../context';
 
-function NewTodo(props) {
+function NewTodo() {
+  const { dispatch } = useContext(TodoContext);
   const [todoValue, setTodoValue] = useState('');
 
   const addTodoChild = () => {
     if (todoValue.trim() != '') {
-      if (props.addTodo) {
-        props.addTodo(todoValue);
+      if (dispatch) {
+        dispatch({ type: 'add', value: todoValue });
         setTodoValue('');
       }
     } else {

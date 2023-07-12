@@ -1,14 +1,15 @@
 import { useState } from 'react';
-import '../../styles/todo.css';
+import './style.css';
 
 function Todo(props) {
+  const { dispatch } = props;
   ///{id:1, label: "do assignment", isDelete:boolean, status:inprogress}
   const [disable, setDisable] = useState(true);
   const onDelete = () => {
-    props.deleteTodo && props.deleteTodo(props.id);
+    dispatch({ type: 'delete', id: props.id });
   };
   const onChangeSelect = event => {
-    props.changeStatusTodo && props.changeStatusTodo(props.id, event.target.value);
+    dispatch({ type: 'change', id: props.id, newStatus: event.target.value });
     setDisable(true);
   };
   const onOpenChange = () => {

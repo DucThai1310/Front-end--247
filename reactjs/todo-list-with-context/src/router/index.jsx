@@ -6,7 +6,8 @@ import DoneTaskPage from '../pages/DoneTask';
 import ToDoTaskPage from '../pages/TodoTask';
 import DetailTaskPage from '../pages/DetailTask';
 import Layout from '../layout';
-export const Router = () => {
+export const Router = ( ) => {
+  
   return (
     <Routes>
       <Route path='/' element={<Layout />}>

@@ -2,7 +2,7 @@ import React from 'react';
 import TaskList from '../../components/TaskList';
 import { useOutletContext } from 'react-router-dom';
 
-function HomePage(props) {
+function HomePage() {
   const [tasks, setTasks] = useOutletContext();
   return (
     <div>
