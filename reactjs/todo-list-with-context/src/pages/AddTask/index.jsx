@@ -1,15 +1,16 @@
 import React, { useContext } from 'react';
 import Form from '../../components/Form';
 import { useNavigate, useOutletContext } from 'react-router-dom';
-import { dispatch } from '../../redux/store';
+import { todoApi } from '../../api';
 
 function AddTaskPage(props) {
   const navigate = useNavigate();
-  const [tasks, setTasks] = useOutletContext();
+  // const [tasks, setTasks] = useOutletContext();
   const createTask = task => {
-    dispatch({ type: 'add', payload: task });
-    setTasks([...tasks, task]);
-    navigate('/');
+    // setTasks( [ ...tasks, task ] );
+    todoApi.create(task).then(() => {
+      navigate('/');
+    });
   };
   return (
     <div>

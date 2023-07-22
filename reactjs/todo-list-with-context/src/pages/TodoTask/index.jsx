@@ -1,14 +1,21 @@
-import React from 'react';
-import { useOutletContext } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { todoApi } from '../../api';
 import TaskList from '../../components/TaskList';
-import { TODO } from '../../constants';
+import { setTodoList } from '../../redux/slices';
 
 function ToDoTaskPage(props) {
-  const [tasks, setTasks] = useOutletContext();
-
+  const { todo } = useSelector(state => state.todo);
+  const dispatch = useDispatch();
+  useEffect(() => {
+  
+    todoApi.list({ status: 'newtask' }).then(res => {
+      dispatch(setTodoList(res));
+    });
+  }, []);
   return (
     <div>
-      <TaskList tasks={tasks.filter(task => task.status == TODO)}></TaskList>
+      <TaskList tasks={todo}></TaskList>
     </div>
   );
 }

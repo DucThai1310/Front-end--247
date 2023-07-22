@@ -9,7 +9,7 @@ function Task(props) {
     navigate(`/detail/${id}`);
   };
   return (
-    <TaskContainer className={status.toLowerCase()} onClick={goToDetail}>
+    <TaskContainer className={status?.toLowerCase()} onClick={goToDetail}>
       <div className='title'>{title}</div>
       <div className='create'>{creator}</div>
       <div className={`status`}>{status}</div>
@@ -33,19 +33,19 @@ const TaskContainer = styled.div`
   .status {
     font-weight: 600;
   }
-  &.todo {
+  &.newtask {
     background-color: #ff00002b;
     .status {
       color: red;
     }
   }
-  &.inprogress {
+  &.doingtask {
     background-color: #0033ff33;
     .status {
       color: #0034ff;
     }
   }
-  &.done {
+  &.donetask {
     background-color: #00807343;
     .status {
       color: #00806b;
