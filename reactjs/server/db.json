@@ -1,5 +1,17 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$h7aLZdzOR0UOkBUBepbf9Ou8FTv4AnVu6Q9UPzNp3h4cJ5Qt35LSa",
+      "id": 1
+    },
+    {
+      "email": "olivier1@gmail.com",
+      "password": "$2a$10$nZ0lZSzu0KtrUhZvcUeJGOsdI9mSUsV4FBigqFUPWQdF75xhIm0Me",
+      "name": "sdsd",
+      "id": 2
+    }
+  ],
   "typeRooms": [
     {
       "id": 1,

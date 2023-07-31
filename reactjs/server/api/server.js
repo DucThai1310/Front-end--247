@@ -50,6 +50,6 @@ router.render = (req, res) => {
 const PORT = process.env.PORT || 3001;
 server.use("/api", router);
 server.listen(PORT, () => {
-  console.log("JSON Server is running");
+  console.log(`JSON Server is running: http://localhost:${process.env.PORT||3001}`);
 } );
 module.exports = server;
