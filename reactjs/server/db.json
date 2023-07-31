@@ -1,0 +1,700 @@
+{
+  "users": [],
+  "typeRooms": [
+    {
+      "id": 1,
+      "name": "Superior Room Single",
+      "rating": 4,
+      "description": "As our smallest rooms, the Superior Room Single are suited for single occupancy or short-stay double occupancy as they have limited space and storage.",
+      "maxGuest": 2,
+      "price": 299,
+      "images": [
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/1.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/2.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/3.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/4.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/5.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/6.jpg"
+      ],
+      "utilities": [
+        {
+          "wifi": "Free Wi-Fi"
+        },
+        {
+          "bed": "1 double bed"
+        },
+        {
+          "roomSize": "Room size: 25 m²/269 ft²"
+        },
+        {
+          "view": "City view"
+        },
+        {
+          "smoking": "Non-smoking"
+        },
+        {
+          "shower": "Shower"
+        }
+      ],
+      "view": "City view",
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 2,
+      "name": "Superior Room Twin",
+      "rating": 4,
+      "description": "Our Superior Room Twin also provides front views over landscaped gardens. It has a seating area and luxurious duck down bedding. This room is suited for single occupancy or short-stay double occupancy as they have limited space and storage.",
+      "maxGuest": 3,
+      "price": 349,
+      "images": [
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/s1.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/s2.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/s3.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/s4.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/s5.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/s6.jpg"
+      ],
+      "utilities": [
+        {
+          "wifi": "Free Wi-Fi"
+        },
+        {
+          "bed": "1 double bed"
+        },
+        {
+          "roomSize": "Room size: 25 m²/269 ft²"
+        },
+        {
+          "view": "Sky"
+        },
+        {
+          "smoking": "Non-smoking"
+        },
+        {
+          "shower": "Shower"
+        }
+      ],
+      "view": "Sky",
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 3,
+      "name": "Deluxe Room Single",
+      "rating": 4,
+      "description": "Our Deluxe Room Single also provides views over landscaped gardens. It has a seating area, digital safe, minibar and luxurious duck down bedding. This room can be configured with either 2 single beds or zip and linked to provide a large double bed.",
+      "maxGuest": 3,
+      "price": 489,
+      "images": [
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/d1.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/d2.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/d3.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/4.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/5.jpg",
+        "https://danangpetrohotel.com.vn/dataUpload/Room/room/6.jpg"
+      ],
+      "utilities": [
+        {
+          "wifi": "Free Wi-Fi"
+        },
+        {
+          "view": "City view"
+        },
+        {
+          "roomSize": "Room size: 25 m²/269 ft²"
+        },
+        {
+          "bed": "1 double bed"
+        },
+        {
+          "shower": "Shower"
+        },
+        {
+          "view": "Mountain"
+        }
+      ],
+      "view": "City view",
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 4,
+      "name": "Suite Room",
+      "rating": 2,
+      "description": "Our Suite Room has a seating area, ample storage, digital safe, minibar and luxurious duck down bedding. This room can also be configured with an extra roll-away bed for families of 3.",
+      "maxGuest": 5,
+      "price": 519,
+      "images": [
+        "https://www.lottehotel.com/content/dam/lotte-hotel/lotte/hanoi/accommodation/suite/deluxesuite/180921-3-2000-roo-LTHA.jpg.thumb.1920.1920.jpg",
+        "https://www.lottehotel.com/content/dam/lotte-hotel/lotte/hanoi/accommodation/suite/deluxesuite/180921-1-2000-roo-LTHA.jpg.thumb.1920.1920.jpg",
+        "https://www.lottehotel.com/content/dam/lotte-hotel/lotte/hanoi/accommodation/suite/deluxesuite/180921-4-2000-roo-LTHA.jpg.thumb.1920.1920.jpg",
+        "https://www.lottehotel.com/content/dam/lotte-hotel/lotte/hanoi/accommodation/suite/deluxesuite/180921-2-2000-roo-LTHA.jpg.thumb.1920.1920.jpg",
+        "https://www.lottehotel.com/content/dam/lotte-hotel/lotte/hanoi/accommodation/suite/deluxesuite/180921-1-2000-roo-LTHA.jpg.thumb.768.768.jpg",
+        "https://www.lottehotel.com/content/dam/lotte-hotel/lotte/hanoi/accommodation/suite/deluxesuite/180921-3-2000-roo-LTHA.jpg.thumb.768.768.jpg"
+      ],
+      "utilities": [
+        {
+          "wifi": "Free Wi-Fi"
+        },
+        {
+          "bed": "1 double bed"
+        },
+        {
+          "roomSize": "Room size: 25 m²/269 ft²"
+        },
+        {
+          "view": "Sea"
+        },
+        {
+          "smoking": "Non-smoking"
+        },
+        {
+          "shower": "Shower"
+        }
+      ],
+      "view": "Sea",
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 5,
+      "name": "Luxury Suite Room",
+      "rating": 3,
+      "description": "Our Luxury Suite Room also provides views over landscaped gardens and views of the top level. It has ample storage, a seating area, digital safe, minibar and luxurious duck down bedding.",
+      "maxGuest": 5,
+      "price": 599,
+      "images": [
+        "https://s7d2.scene7.com/is/image/ritzcarlton/RCPHILA_00118?$LargeViewport100pct$",
+        "https://s7d2.scene7.com/is/image/ritzcarlton/RCPHILA_00112?$MedViewport100pct$",
+        "https://s7d2.scene7.com/is/image/ritzcarlton/RCPHILA_00118?$MedViewport100pct$",
+        "https://s7d2.scene7.com/is/image/ritzcarlton/RCPHILA_00189?$MedViewport100pct$",
+        "https://s7d2.scene7.com/is/image/ritzcarlton/50524191-Luxury%20Suite%20Top%20LUXR?$MedViewport100pct$",
+        "https://s7d2.scene7.com/is/image/ritzcarlton/50524190-Luxury%20Suite%202%20LUXR?$MedViewport100pct$"
+      ],
+      "utilities": [
+        {
+          "wifi": "Free Wi-Fi"
+        },
+        {
+          "bed": "1 double bed"
+        },
+        {
+          "roomSize": "Room size: 25 m²/269 ft²"
+        },
+        {
+          "view": "City view"
+        },
+        {
+          "smoking": "Non-smoking"
+        },
+        {
+          "shower": "Shower"
+        }
+      ],
+      "view": "Mountains view",
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "101",
+      "typeRoomId": 1,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 2,
+      "name": "102",
+      "typeRoomId": 1,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 3,
+      "name": "103",
+      "typeRoomId": 1,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 4,
+      "name": "104",
+      "typeRoomId": 1,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 5,
+      "name": "105",
+      "typeRoomId": 1,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 6,
+      "name": "201",
+      "typeRoomId": 2,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 7,
+      "name": "202",
+      "typeRoomId": 2,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 8,
+      "name": "203",
+      "typeRoomId": 2,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 9,
+      "name": "204",
+      "typeRoomId": 2,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 10,
+      "name": "106",
+      "typeRoomId": 2,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 11,
+      "name": "301",
+      "typeRoomId": 3,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 12,
+      "name": "302",
+      "typeRoomId": 3,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 13,
+      "name": "303",
+      "typeRoomId": 3,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 14,
+      "name": "304",
+      "typeRoomId": 3,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 15,
+      "name": "306",
+      "typeRoomId": 3,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 16,
+      "name": "401",
+      "typeRoomId": 4,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 17,
+      "name": "402",
+      "typeRoomId": 4,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 18,
+      "name": "403",
+      "typeRoomId": 4,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 19,
+      "name": "404",
+      "typeRoomId": 4,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 20,
+      "name": "406",
+      "typeRoomId": 4,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 21,
+      "name": "501",
+      "typeRoomId": 5,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 22,
+      "name": "502",
+      "typeRoomId": 5,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 23,
+      "name": "503",
+      "typeRoomId": 5,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 24,
+      "name": "504",
+      "typeRoomId": 5,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "id": 25,
+      "name": "506",
+      "typeRoomId": 5,
+      "createdAt": 1631092999151,
+      "updatedAt": 1631093012330
+    },
+    {
+      "name": "507",
+      "typeRoomId": 5,
+      "createdAt": 1631714526983,
+      "updatedAt": 1631714526983,
+      "id": 26
+    },
+    {
+      "name": "175",
+      "typeRoomId": 3,
+      "rating": 5,
+      "createdAt": 1632148312843,
+      "updatedAt": 1632148312843,
+      "id": 27
+    }
+  ],
+  "comments": [
+    {
+      "typeRoomId": 1,
+      "userId": 4,
+      "rating": 5,
+      "title": "very good!",
+      "review": "service is good and room is coftible",
+      "stars": {
+        "service": 5,
+        "room": 4,
+        "food": 3,
+        "cleanness": 3
+      },
+      "image": [],
+      "createdAt": 1631590734064,
+      "updatedAt": 1631590734064,
+      "id": 2
+    },
+    {
+      "typeRoomId": "1",
+      "userId": 4,
+      "rating": 5,
+      "title": "very good!",
+      "review": "very good",
+      "stars": {
+        "service": 4,
+        "room": 4,
+        "food": 4,
+        "cleanness": 5
+      },
+      "image": [],
+      "createdAt": 1631618709294,
+      "updatedAt": 1631618709294,
+      "id": 3
+    },
+    {
+      "typeRoomId": "2",
+      "userId": 4,
+      "rating": 5,
+      "title": "very good!",
+      "review": "ff",
+      "stars": {
+        "service": 3,
+        "room": 3,
+        "food": 4,
+        "cleanness": 4
+      },
+      "image": [],
+      "createdAt": 1631760098685,
+      "updatedAt": 1631760098685,
+      "id": 4
+    },
+    {
+      "typeRoomId": "1",
+      "userId": 4,
+      "rating": 5,
+      "title": "very good!",
+      "review": "vv\n",
+      "stars": {
+        "service": 5,
+        "room": 5,
+        "food": 3,
+        "cleanness": 3
+      },
+      "image": [],
+      "createdAt": 1631865629488,
+      "updatedAt": 1631865629488,
+      "id": 5
+    },
+    {
+      "typeRoomId": "1",
+      "userId": 5,
+      "rating": 5,
+      "title": "very good!",
+      "review": "very good !",
+      "stars": {
+        "service": 5,
+        "room": 5,
+        "food": 2,
+        "cleanness": 4
+      },
+      "image": [],
+      "createdAt": 1632406940349,
+      "updatedAt": 1632406940349,
+      "id": 6
+    }
+  ],
+  "discounts": [
+    {
+      "id": 1,
+      "name": "SPR-010315",
+      "typeRoomId": 1,
+      "start": 1610643600000,
+      "end": 1614877200000,
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797786141,
+      "value": 8
+    },
+    {
+      "id": 2,
+      "name": "SUM-040620",
+      "typeRoomId": 3,
+      "start": 1622566800000,
+      "end": 1624554000000,
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797745205,
+      "value": 12
+    },
+    {
+      "id": 3,
+      "name": "FAL-070925",
+      "typeRoomId": 2,
+      "start": 1631092999151,
+      "end": 1633626000000,
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797703035,
+      "value": 10
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "",
+      "description": "",
+      "author": "",
+      "image": ""
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "typeRoomId": 2,
+      "userId": 1,
+      "discountCode": "FAL-070925",
+      "discountPrice": 11,
+      "roomId": 6,
+      "checkOut": 1631093012330,
+      "checkIn": 1631092999151,
+      "price": 123,
+      "total": 120,
+      "status": "pending",
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797703035
+    },
+    {
+      "id": 2,
+      "typeRoomId": 2,
+      "userId": 2,
+      "discountCode": "FAL-070925",
+      "discountPrice": 11,
+      "roomId": 9,
+      "checkOut": 1631093012330,
+      "checkIn": 1631092999151,
+      "price": 123,
+      "total": 120,
+      "status": "pending",
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797703035
+    },
+    {
+      "id": 3,
+      "typeRoomId": 1,
+      "userId": 3,
+      "discountCode": "FAL-070925",
+      "discountPrice": 11,
+      "roomId": 1,
+      "checkOut": 1631898000000,
+      "checkIn": 1631670575925,
+      "price": 123,
+      "total": 120,
+      "status": "pending",
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797703035
+    },
+    {
+      "id": 4,
+      "typeRoomId": 1,
+      "userId": 1,
+      "discountCode": "FAL-070925",
+      "discountPrice": 11,
+      "roomId": 2,
+      "checkOut": 1631898000000,
+      "checkIn": 1631670575925,
+      "price": 123,
+      "total": 120,
+      "status": "pending",
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797703035
+    },
+    {
+      "id": 5,
+      "typeRoomId": 3,
+      "userId": 2,
+      "discountCode": "FAL-070925",
+      "discountPrice": 11,
+      "roomId": 11,
+      "checkOut": 1631898000000,
+      "checkIn": 1631670575925,
+      "price": 123,
+      "total": 120,
+      "status": "pending",
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797703035
+    },
+    {
+      "id": 6,
+      "typeRoomId": 3,
+      "userId": 1,
+      "discountCode": "FAL-070925",
+      "discountPrice": 11,
+      "roomId": 15,
+      "checkOut": 1631898000000,
+      "checkIn": 1631670575925,
+      "price": 123,
+      "total": 120,
+      "status": "pending",
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797703035
+    },
+    {
+      "id": 8,
+      "typeRoomId": 4,
+      "userId": 2,
+      "discountCode": "FAL-070925",
+      "discountPrice": 11,
+      "roomId": 16,
+      "checkOut": 1631898000000,
+      "checkIn": 1631670575925,
+      "price": 123,
+      "total": 120,
+      "status": "pending",
+      "createdAt": 1631541812854,
+      "updatedAt": 1631797703035
+    },
+    {
+      "typeRoomId": 3,
+      "userId": 5,
+      "discountCode": "SPR-010315",
+      "discountPrice": 8,
+      "roomId": 11,
+      "checkOut": 1633107600000,
+      "checkIn": 1632502800000,
+      "numberNight": 7,
+      "price": 489,
+      "total": 3471.9,
+      "status": "canceled",
+      "id": 12,
+      "updatedAt": 1632497812708
+    },
+    {
+      "typeRoomId": 1,
+      "userId": 5,
+      "discountCode": "SUM-040620",
+      "discountPrice": 12,
+      "roomId": 1,
+      "checkOut": 1633107600000,
+      "checkIn": 1632502800000,
+      "numberNight": 7,
+      "price": 299,
+      "total": 1868.152,
+      "status": "pending",
+      "id": 13
+    },
+    {
+      "typeRoomId": 2,
+      "userId": 5,
+      "discountCode": "SPR-010315",
+      "discountPrice": 8,
+      "roomId": 6,
+      "checkOut": 1633107600000,
+      "checkIn": 1632934800000,
+      "numberNight": 2,
+      "price": 349,
+      "total": 674.268,
+      "status": "canceled",
+      "id": 14,
+      "updatedAt": 1632500045625
+    },
+    {
+      "typeRoomId": 4,
+      "userId": 5,
+      "discountCode": "FAL-070925",
+      "discountPrice": 10,
+      "roomId": 16,
+      "checkOut": 1633107600000,
+      "checkIn": 1632589200000,
+      "numberNight": 6,
+      "price": 519,
+      "total": 2849.31,
+      "status": "canceled",
+      "id": 15,
+      "updatedAt": 1632500101510
+    },
+    {
+      "typeRoomId": 1,
+      "userId": 5,
+      "discountCode": "SUM-040620",
+      "discountPrice": 12,
+      "roomId": 2,
+      "checkOut": 1633107600000,
+      "checkIn": 1632502800000,
+      "numberNight": 7,
+      "price": 299,
+      "total": 1868.152,
+      "status": "pending",
+      "id": 16
+    }
+  ]
+}
