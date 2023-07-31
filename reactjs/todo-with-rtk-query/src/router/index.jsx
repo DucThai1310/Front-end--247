@@ -6,12 +6,13 @@ import DoneTaskPage from '../pages/DoneTask';
 import ToDoTaskPage from '../pages/TodoTask';
 import DetailTaskPage from '../pages/DetailTask';
 import Layout from '../layout';
+import { SITE_MAP } from '../constants/siteMapConstants';
 export const Router = ( ) => {
   
   return (
     <Routes>
-      <Route path='/' element={<Layout />}>
-        <Route path='/' element={<HomePage />} />
+      <Route path={SITE_MAP.HOME.url} element={<Layout />}>
+        <Route path={SITE_MAP.HOME.url} element={<HomePage />} />
         <Route path='/new-task' element={<ToDoTaskPage />} />
         <Route path='/doing-task' element={<InProgressTask />} />
         <Route path='/done-task' element={<DoneTaskPage />} />
