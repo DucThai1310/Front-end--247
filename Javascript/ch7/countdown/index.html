@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js"></script>
+    <title>Document</title>
+    <style>
+      .main {
+        width: 500px;
+        border: 2px solid blue;
+        margin: 30px auto;
+        padding: 20px;
+      }
+      label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        margin-bottom: 20px;
+      }
+      button {
+        margin: 20px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h2>Countdown to...</h2>
+      <br />
+      <label for="eventName">Event Name:</label>
+      <input type="text" id="eventName" name="eventName" />
+      <br />
+      <label for="eventDate">Event Date:</label>
+      <input type="text" id="eventDate" name="eventDate" />
+      <br />
+      <button id="countdown">CountDown</button>
+      <br />
+      <span id="message"></span>
+    </div>
+  </body>
+</html>

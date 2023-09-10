@@ -1,0 +1,32 @@
+.todo {
+  display: flex;
+  /* max-width: 400px; */
+  justify-content: space-between;
+  align-items: center;
+  /* text-decoration: line-through; */
+}
+
+.todo__name {
+  font-size: 17px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 17px;
+  margin: 10px;
+  color: white;
+  background-color: rgb(81, 81, 232);
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.btn-delete {
+  background-color: rgb(229, 81, 81);
+}

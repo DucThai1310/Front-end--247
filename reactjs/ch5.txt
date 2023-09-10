@@ -1,0 +1,3 @@
+- lifecycle component 
+- hooks: useEffect,useState
+- lifecycle with function component

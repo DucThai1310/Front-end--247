@@ -1,0 +1,8 @@
+- react router
+  - createBrowserRouter: function
+  - RouterProvider: Component Provider
+  - Outlet: Avatar Component
+  - Link: Component
+  - useNavigate: Hook
+  - Navigate: Component
+  - useParams : hook
